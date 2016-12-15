@@ -20,11 +20,11 @@ You are good to go
 
 ## Usage
 
-To use the bootstrap snippets, open an editor, and start typing `b4-`, followed by pressing `Ctrl+Space`. A list of bootstrap snippets will show up. Alternatively, you can type e.g. `jumbotron`, followed by Ctrl+J, to immediately show only the jumbotron related snippets.
+To use the bootstrap snippets, open a HTML file, and start typing `b4-`, followed by pressing `Ctrl+Space`. A list of bootstrap snippets will show up
 
-To use font awesome snippets, open an editor, and start typing `fa-`, the editor will show you all the snippets
+To use font awesome snippets, open a HTML file, and start typing `fa-`, the editor will show you all the snippets
 
-The detailed list of supported actions are listed below
+The detailed list of supported actions are listed [below](#documentation)
 
 ## Contribution guidelines
 
