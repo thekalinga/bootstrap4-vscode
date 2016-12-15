@@ -24,7 +24,7 @@ To use the bootstrap snippets, open a HTML file, and start typing `b4-`, followe
 
 To use font awesome snippets, open a HTML file, and start typing `fa-`, the editor will show you all the snippets
 
-The detailed list of supported actions are listed [below](#documentation)
+The detailed list of supported actions are listed below under documentation section
 
 ## Contribution guidelines
 
