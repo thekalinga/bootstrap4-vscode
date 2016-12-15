@@ -1,0 +1,12 @@
+build/
+.gradle/
+.idea/
+target/
+.project
+.classpath
+/bootstrap.xml
+/font-awesome.xml
+/bootstrap-snippets.json
+/font-awesome-snippets.json
+*.vsix
+*.*~
