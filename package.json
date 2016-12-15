@@ -1,7 +1,7 @@
 {
   "name": "bootstrap4-vscode",
   "displayName": "Bootstrap 4 & Font awesome snippets",
-  "description": "Bootstrap 4 snippets based on bootstrap's documentation along with Font awesome 4.7 snippets",
+  "description": "Bootstrap 4 snippets based on documentation + Font awesome snippets",
   "icon": "bootstrap.svg",
   "version": "1.0.1",
   "publisher": "thekalinga",
