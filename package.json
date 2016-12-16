@@ -1,60 +1,60 @@
 {
-  "name": "bootstrap4-vscode",
-  "displayName": "Bootstrap 4 & Font awesome snippets",
-  "description": "Bootstrap 4 snippets based on documentation + Font awesome snippets",
-  "icon": "bootstrap.svg",
-  "version": "1.0.1",
-  "publisher": "thekalinga",
-  "license": "See License section in README.md",
-  "homepage": "https://github.com/thekalinga/bootstrap4-vscode/blob/master/README.md",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thekalinga/bootstrap4-vscode.git"
-  },
-  "engines": {
-    "vscode": "^0.10.1"
-  },
-  "galleryBanner": {
-    "color": "#E6E0EA",
-    "theme": "light"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "html",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "handlebars",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "php",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "razor",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "ejs",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "latte",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "tpl",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "ts",
-        "path": "./snippets.json"
-      }
-    ]
-  }
+    "name": "bootstrap4-vscode",
+    "displayName": "Bootstrap 4 & Font awesome snippets",
+    "description": "Bootstrap 4 snippets based on documentation + Font awesome snippets",
+    "icon": "bootstrap.svg",
+    "version": "1.0.2",
+    "publisher": "thekalinga",
+    "license": "See License section in README.md",
+    "homepage": "https://github.com/thekalinga/bootstrap4-vscode/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thekalinga/bootstrap4-vscode.git"
+    },
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "galleryBanner": {
+        "color": "#E6E0EA",
+        "theme": "light"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets.json"
+            },
+            {
+                "language": "handlebars",
+                "path": "./snippets.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets.json"
+            },
+            {
+                "language": "razor",
+                "path": "./snippets.json"
+            },
+            {
+                "language": "ejs",
+                "path": "./snippets.json"
+            },
+            {
+                "language": "latte",
+                "path": "./snippets.json"
+            },
+            {
+                "language": "tpl",
+                "path": "./snippets.json"
+            },
+            {
+                "language": "ts",
+                "path": "./snippets.json"
+            }
+        ]
+    }
 }
