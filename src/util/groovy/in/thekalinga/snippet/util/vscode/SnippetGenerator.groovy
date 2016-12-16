@@ -32,7 +32,7 @@ class SnippetGenerator {
             templateStr = contentUntouched
 
             triggerPattern = fileBaseName != '$' ? "b4-${fileParent}-${fileBaseName}" : 'b4-$'
-            templateStr = templateStr.contains("\$END\$") ? templateStr.replaceAll("\\\$END\\\$", '\\\$0') : "${templateStr}\$0"
+            templateStr = templateStr.contains("\$END\$") ? templateStr.trim().replaceAll("\\\$END\\\$", '\\\$0') : "${templateStr.trim()}\$0"
             helpMsg = fileBaseName != '$' ? "${fileParent} ${fileBaseName}".replace(/-/, ' ') : 'Bootstrap master template'
 
             def snippet = Snippet.builder().prefix(triggerPattern).body(templateStr).description(helpMsg).scope('').build()
