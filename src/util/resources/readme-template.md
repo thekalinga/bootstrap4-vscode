@@ -46,4 +46,4 @@ Bootstrap 4 & Font awesome - Visual studio code plugin is open-sourced software 
 
 ## Disclaimer:
 
-Readme template for this for the source was initially borrowed from [here](https://github.com/bodiam/intellij-bootstrap3) & [here](https://github.com/JasonMortonNZ/bs3-sublime-plugin)
+Readme template for this plugin was initially borrowed from [here](https://github.com/bodiam/intellij-bootstrap3) & [here](https://github.com/JasonMortonNZ/bs3-sublime-plugin)

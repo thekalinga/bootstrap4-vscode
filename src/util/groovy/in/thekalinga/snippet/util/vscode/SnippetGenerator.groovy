@@ -62,6 +62,6 @@ class SnippetGenerator {
         File file = new File("snippets.json")
 
         mapper.writeValue(file, descriptionToSnippet)
-        println file.absolutePath
+        println "Regenerated snippets. Saved to ${file.absolutePath}"
     }
 }

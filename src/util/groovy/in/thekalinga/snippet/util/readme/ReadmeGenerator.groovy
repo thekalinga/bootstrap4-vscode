@@ -100,7 +100,7 @@ class ReadmeGenerator {
 
         File readme = new File("README.md")
         IOUtils.write(readmeContent, new FileOutputStream(readme), defaultCharset())
-        println readme.absolutePath
+        println "Regenerated readme. Saved to ${readme.absolutePath}"
     }
 
 }

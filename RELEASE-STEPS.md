@@ -1,0 +1,7 @@
+- Bump version in `.version` file
+- Run `RegeneratePlugin`
+- Update `CHANGELOG.md` with release notes
+- Commit
+- Create tag using `git tag -a <version> -m "<Release notes>"`
+- `git push && git push origin <version>`
+- `vsce publish`
