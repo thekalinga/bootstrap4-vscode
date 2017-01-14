@@ -13,3 +13,4 @@ font-awesome-snippets.json
 *.gradle
 gradle*
 *.*~
+*.gif
