@@ -60,7 +60,7 @@ alert-success | Alert success
 alert-warning-a | Alert warning with link
 alert-warning | Alert warning
 
-### badge
+### Badge
 
 Trigger | Description
 --- | ---
