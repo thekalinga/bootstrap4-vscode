@@ -60,15 +60,22 @@ alert-success | Alert success
 alert-warning-a | Alert warning with link
 alert-warning | Alert warning
 
-### Button group
+### badge
 
 Trigger | Description
 --- | ---
-bgroup-default | Button group default
-bgroup-dropdown-vertical | Button group dropdown vertical
-bgroup-dropdown | Button group dropdown
-bgroup-size | Button group size
-bgroup-toolbar | Button group toolbar
+badge-danger | Badge danger
+badge-danger-pill | Badge danger with pill shape
+badge-default | Badge default
+badge-default-pill | Badge default with pill shape
+badge-info | Badge info
+badge-info-pill | Badge info with pill shape
+badge-primary | Badge primary
+badge-primary-pill | Badge primary with pill shape
+badge-success | Badge success
+badge-success-pill | Badge success with pill shape
+badge-warning | Badge warning
+badge-warning-pill | Badge warning with pill shape
 
 ### Breadcrumb
 
@@ -91,6 +98,16 @@ button-outline | Button outline
 button-radio | Button radio
 button-sizes | Button sizes
 button-toggle | Button toggle
+
+### Button Group
+
+Trigger | Description
+--- | ---
+bgroup-default | Button group default
+bgroup-dropdown-vertical | Button group dropdown vertical
+bgroup-dropdown | Button group dropdown
+bgroup-size | Button group size
+bgroup-toolbar | Button group toolbar
 
 ### Card
 
