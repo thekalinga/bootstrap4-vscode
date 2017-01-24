@@ -32,6 +32,8 @@ The detailed list of supported actions are listed below under documentation sect
 2. Modify the html snippet resources under `src/util/resources/bootstrap`. These Html snippets must follow Sublime text snippet format
 3. Send me a pull request
 
+> You just need to create the template htmls in sublime text format. There is no need to update `README.md`/`snippets.json` manually. The build will take care of regenerating these files from the templates automatically
+
 ## Changelog
 
 See [here](CHANGELOG.md)
@@ -64,18 +66,28 @@ alert-warning | Alert warning
 
 Trigger | Description
 --- | ---
+badge-danger-pill | Badge danger pill
 badge-danger | Badge danger
-badge-danger-pill | Badge danger with pill shape
+badge-default-pill | Badge default pill
 badge-default | Badge default
-badge-default-pill | Badge default with pill shape
+badge-info-pill | Badge info pill
 badge-info | Badge info
-badge-info-pill | Badge info with pill shape
+badge-primary-pill | Badge primary pill
 badge-primary | Badge primary
-badge-primary-pill | Badge primary with pill shape
+badge-success-pill | Badge success pill
 badge-success | Badge success
-badge-success-pill | Badge success with pill shape
+badge-warning-pill | Badge warning pill
 badge-warning | Badge warning
-badge-warning-pill | Badge warning with pill shape
+
+### Button group
+
+Trigger | Description
+--- | ---
+bgroup-default | Button group default
+bgroup-dropdown-vertical | Button group dropdown vertical
+bgroup-dropdown | Button group dropdown
+bgroup-size | Button group size
+bgroup-toolbar | Button group toolbar
 
 ### Breadcrumb
 
@@ -98,16 +110,6 @@ button-outline | Button outline
 button-radio | Button radio
 button-sizes | Button sizes
 button-toggle | Button toggle
-
-### Button Group
-
-Trigger | Description
---- | ---
-bgroup-default | Button group default
-bgroup-dropdown-vertical | Button group dropdown vertical
-bgroup-dropdown | Button group dropdown
-bgroup-size | Button group size
-bgroup-toolbar | Button group toolbar
 
 ### Card
 

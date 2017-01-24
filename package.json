@@ -3,9 +3,9 @@
   "displayName": "Bootstrap 4 & Font awesome snippets",
   "description": "Bootstrap 4 snippets based on documentation + Font awesome snippets",
   "icon": "bootstrap.svg",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "publisher": "thekalinga",
-  "license": "See License section in README.md",
+  "license": "MIT",
   "homepage": "https://github.com/thekalinga/bootstrap4-vscode/blob/master/README.md",
   "repository": {
     "type": "git",

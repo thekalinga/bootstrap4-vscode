@@ -71,6 +71,78 @@
     "description" : "alert warning",
     "scope" : ""
   },
+  "badge danger pill" : {
+    "prefix" : "b4-badge-danger-pill",
+    "body" : "<span class=\"badge badge-pill badge-danger\">${1:Danger!}</span>$0",
+    "description" : "badge danger pill",
+    "scope" : ""
+  },
+  "badge danger" : {
+    "prefix" : "b4-badge-danger",
+    "body" : "<span class=\"badge badge-danger\">${1:Danger!}</span>$0",
+    "description" : "badge danger",
+    "scope" : ""
+  },
+  "badge default pill" : {
+    "prefix" : "b4-badge-default-pill",
+    "body" : "<span class=\"badge badge-pill badge-default\">$1</span>$0",
+    "description" : "badge default pill",
+    "scope" : ""
+  },
+  "badge default" : {
+    "prefix" : "b4-badge-default",
+    "body" : "<span class=\"badge badge-default\">$1</span>$0",
+    "description" : "badge default",
+    "scope" : ""
+  },
+  "badge info pill" : {
+    "prefix" : "b4-badge-info-pill",
+    "body" : "<span class=\"badge badge-pill badge-info\">${1:Heads up!}</span>$0",
+    "description" : "badge info pill",
+    "scope" : ""
+  },
+  "badge info" : {
+    "prefix" : "b4-badge-info",
+    "body" : "<span class=\"badge badge-info\">${1:Heads up!}</span>$0",
+    "description" : "badge info",
+    "scope" : ""
+  },
+  "badge primary pill" : {
+    "prefix" : "b4-badge-primary-pill",
+    "body" : "<span class=\"badge badge-pill badge-primary\">${1:Primary}</span>$0",
+    "description" : "badge primary pill",
+    "scope" : ""
+  },
+  "badge primary" : {
+    "prefix" : "b4-badge-primary",
+    "body" : "<span class=\"badge badge-primary\">${1:Primary}</span>$0",
+    "description" : "badge primary",
+    "scope" : ""
+  },
+  "badge success pill" : {
+    "prefix" : "b4-badge-success-pill",
+    "body" : "<span class=\"badge badge-pill badge-success\">${1:Success!}</span>$0",
+    "description" : "badge success pill",
+    "scope" : ""
+  },
+  "badge success" : {
+    "prefix" : "b4-badge-success",
+    "body" : "<span class=\"badge badge-success\">${1:Success!}</span>$0",
+    "description" : "badge success",
+    "scope" : ""
+  },
+  "badge warning pill" : {
+    "prefix" : "b4-badge-warning-pill",
+    "body" : "<span class=\"badge badge-pill badge-warning\">${1:Be careful!}</span>$0",
+    "description" : "badge warning pill",
+    "scope" : ""
+  },
+  "badge warning" : {
+    "prefix" : "b4-badge-warning",
+    "body" : "<span class=\"badge badge-warning\">${1:Be careful!}</span>$0",
+    "description" : "badge warning",
+    "scope" : ""
+  },
   "bgroup default" : {
     "prefix" : "b4-bgroup-default",
     "body" : "<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|info|warning|danger|link}\">$3</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|info|warning|danger|link}\">$4</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|info|warning|danger|link}\">$5</button>\n</div>$0",
