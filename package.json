@@ -36,6 +36,14 @@
         "path": "./snippets.json"
       },
       {
+        "language": "blade",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "twig",
+        "path": "./snippets.json"
+      },
+      {
         "language": "razor",
         "path": "./snippets.json"
       },
