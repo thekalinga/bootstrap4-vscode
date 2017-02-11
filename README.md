@@ -33,6 +33,7 @@ The detailed list of supported actions are listed below under documentation sect
 3. Send me a pull request
 
 > You just need to create the template htmls in sublime snippet format. There is no need to update `README.md`/`snippets.json` manually. The build will take care of regenerating these files from the templates automatically
+> `README.md` & `package.json` files are re-generated for every build. If you need to modify them, you should modify their templates (which are used to generate the root level files) them under `src/util/resources`. For eg., If you want `package.json` at the root to be modified, you should change `package-template.json` under `src/util/resources`
 
 ## Changelog
 

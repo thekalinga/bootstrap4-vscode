@@ -22,8 +22,7 @@
     "Snippets"
   ],
   "contributes": {
-    "snippets": [
-      {
+    "snippets": [{
         "language": "html",
         "path": "./snippets.json"
       },
@@ -33,6 +32,14 @@
       },
       {
         "language": "php",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "twig",
         "path": "./snippets.json"
       },
       {

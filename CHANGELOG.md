@@ -1,6 +1,11 @@
+## Since 2.3.0 (11 Feb 2017):
+  
+  - Fixed twig and blade support
+  - Updated README to reflect how `package.json` and `README.md` should be updated
+
 ## Since 2.2.0 (11 Feb 2017):
   
-  - Add twig and blade support
+  - Added twig and blade support
 
 ## Since 2.1.0 (24 Jan 2017):
   

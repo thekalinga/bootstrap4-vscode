@@ -3,7 +3,7 @@
   "displayName": "Bootstrap 4 & Font awesome snippets",
   "description": "Bootstrap 4 snippets based on documentation + Font awesome snippets",
   "icon": "bootstrap.svg",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "publisher": "thekalinga",
   "license": "See License section in README.md",
   "homepage": "https://github.com/thekalinga/bootstrap4-vscode/blob/master/README.md",
@@ -22,8 +22,7 @@
     "Snippets"
   ],
   "contributes": {
-    "snippets": [
-      {
+    "snippets": [{
         "language": "html",
         "path": "./snippets.json"
       },
@@ -33,6 +32,14 @@
       },
       {
         "language": "php",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "twig",
         "path": "./snippets.json"
       },
       {
