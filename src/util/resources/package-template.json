@@ -22,7 +22,16 @@
     "Snippets"
   ],
   "contributes": {
-    "snippets": [{
+    "snippets": [
+      {
+        "language": "blade",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "ejs",
+        "path": "./snippets.json"
+      },
+      {
         "language": "html",
         "path": "./snippets.json"
       },
@@ -31,15 +40,15 @@
         "path": "./snippets.json"
       },
       {
+        "language": "latte",
+        "path": "./snippets.json"
+      },
+      {
         "language": "php",
         "path": "./snippets.json"
       },
       {
-        "language": "blade",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "twig",
+        "language": "plaintext",
         "path": "./snippets.json"
       },
       {
@@ -47,19 +56,19 @@
         "path": "./snippets.json"
       },
       {
-        "language": "ejs",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "latte",
-        "path": "./snippets.json"
-      },
-      {
         "language": "tpl",
         "path": "./snippets.json"
       },
       {
-        "language": "ts",
+        "language": "typescript",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "twig",
         "path": "./snippets.json"
       }
     ]
