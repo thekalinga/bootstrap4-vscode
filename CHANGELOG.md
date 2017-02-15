@@ -1,3 +1,7 @@
+## Since 2.3.2 (15 Feb 2017):
+  
+  - Fixed issue with carousel
+
 ## Since 2.3.1 (15 Feb 2017):
   
   - Fixed twig, blade & typescript support. Now if a file format is nto supported by vscode & interprets this as plaintext, b4 still works there
