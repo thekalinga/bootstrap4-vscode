@@ -361,7 +361,7 @@
   },
   "collapse accordion" : {
     "prefix" : "b4-collapse-accordion",
-    "body" : "<div id=\"${1:accordianId}\" role=\"tablist\" aria-multiselectable=\"true\">\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${3:section1HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${5:section1ContentId}\" aria-expanded=\"true\" aria-controls=\"${5:section1ContentId}\">\n          ${2:Section 1}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${5:section1ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${3:section1HeaderId}\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t${4:Section 1 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${7:section2HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${9:section2ContentId}\" aria-expanded=\"true\" aria-controls=\"${9:section2ContentId}\">\n          ${6:Section 2}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${9:section2ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${7:section2HeaderId}\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t${8:Section 3 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>$0",
+    "body" : "<div id=\"${1:accordianId}\" role=\"tablist\" aria-multiselectable=\"true\">\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${3:section1HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${5:section1ContentId}\" aria-expanded=\"true\" aria-controls=\"${5:section1ContentId}\">\n          ${2:Section 1}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${5:section1ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${3:section1HeaderId}\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t${4:Section 1 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${7:section2HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${9:section2ContentId}\" aria-expanded=\"true\" aria-controls=\"${9:section2ContentId}\">\n          ${6:Section 2}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${9:section2ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${7:section2HeaderId}\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t${8:Section 2 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>$0",
     "description" : "collapse accordion",
     "scope" : ""
   },
@@ -379,7 +379,7 @@
   },
   "dropdown alignment" : {
     "prefix" : "b4-dropdown-alignment",
-    "body" : "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"btn-group\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:This dropdown's menu is right-aligned}\n\t</button>\n\t<div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0",
     "description" : "dropdown alignment",
     "scope" : ""
   },
@@ -391,7 +391,7 @@
   },
   "dropdown button" : {
     "prefix" : "b4-dropdown-button",
-    "body" : "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<button class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<button class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<button class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</button>\n\t\t<button class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</button>\n\t</div>\n</div>$0",
     "description" : "dropdown button",
     "scope" : ""
   },
@@ -427,7 +427,7 @@
   },
   "dropdown up" : {
     "prefix" : "b4-dropdown-up",
-    "body" : "<div class=\"btn-group dropup\">\n  <button type=\"button\" class=\"btn btn-secondary\">${1:Dropup}</button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"${3:#}\">${2:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${5:#}\">${4:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${6:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:After divider action}</a>\n  </div>\n</div>$0",
+    "body" : "<div class=\"dropup\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0",
     "description" : "dropdown up",
     "scope" : ""
   },

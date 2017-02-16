@@ -10,3 +10,4 @@ target/
 /font-awesome-snippets.json
 *.vsix
 *.*~
+*.log

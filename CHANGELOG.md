@@ -1,3 +1,7 @@
+## Since 2.3.3 (16 Feb 2017):
+  
+  - Fixed issue with dropdown
+
 ## Since 2.3.2 (15 Feb 2017):
   
   - Fixed issue with carousel
