@@ -2,8 +2,8 @@
   "name": "bootstrap4-vscode",
   "displayName": "Bootstrap 4 & Font awesome snippets",
   "description": "Bootstrap 4 snippets based on documentation + Font awesome snippets",
-  "icon": "bootstrap.svg",
-  "version": "2.3.3",
+  "icon": "bootstrap_128px.png",
+  "version": "2.4.0",
   "publisher": "thekalinga",
   "license": "See License section in README.md",
   "homepage": "https://github.com/thekalinga/bootstrap4-vscode/blob/master/README.md",
@@ -69,6 +69,10 @@
       },
       {
         "language": "twig",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "vue",
         "path": "./snippets.json"
       }
     ]

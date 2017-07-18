@@ -1,3 +1,7 @@
+## Since 2.4.0 (18 Jul 2017):
+
+  - Added support for vue
+
 ## Since 2.3.3 (16 Feb 2017):
   
   - Fixed issue with dropdown
