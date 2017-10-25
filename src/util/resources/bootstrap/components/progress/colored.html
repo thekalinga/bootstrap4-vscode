@@ -1,2 +1,4 @@
-<div class="text-xs-center" id="${2:progressId}">${1:Description}</div>
-<progress class="progress progress-${5:success|info|warning|danger}" value="$4" max="${3:100}" aria-describedby="${2:progressId}"></progress>
+<div class="progress">
+    <div class="progress-bar bg-${5:primary|secondary|success|danger|warning|info|light|dark}" role="progressbar" style="width: ${4:25}%;"
+        aria-valuenow="${4:25}" aria-valuemin="${2:0}" aria-valuemax="${3:100}">${1:Description}</div>
+</div>

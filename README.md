@@ -52,32 +52,19 @@ Trigger | Description
 --- | ---
 alert-additional-content | Alert additional content
 alert-closable | Alert closable
-alert-danger-a | Alert danger with link
-alert-danger | Alert danger
+alert-default | Alert default
 alert-dismissible | Alert dismissible
-alert-info-a | Alert info with link
-alert-info | Alert info
-alert-success-a | Alert success with link
-alert-success | Alert success
-alert-warning-a | Alert warning with link
-alert-warning | Alert warning
+alert-link | Alert link
 
 ### Badge
 
 Trigger | Description
 --- | ---
-badge-danger-pill | Badge danger pill
-badge-danger | Badge danger
-badge-default-pill | Badge default pill
+badge-button | Badge button
 badge-default | Badge default
-badge-info-pill | Badge info pill
-badge-info | Badge info
-badge-primary-pill | Badge primary pill
-badge-primary | Badge primary
-badge-success-pill | Badge success pill
-badge-success | Badge success
-badge-warning-pill | Badge warning pill
-badge-warning | Badge warning
+badge-heading | Badge heading
+badge-link | Badge link
+badge-pill | Badge pill
 
 ### Button group
 
@@ -119,6 +106,7 @@ card-align | Card align
 card-background-custom | Card background custom
 card-background | Card background
 card-blockquote | Card blockquote
+card-border | Card border
 card-columns | Card columns
 card-decks | Card decks
 card-default | Card default
@@ -127,7 +115,6 @@ card-groups | Card groups
 card-head-foot | Card head foot
 card-links | Card links
 card-list | Card list
-card-outline | Card outline
 card-overlay | Card overlay
 card-pill-head | Card pill head
 card-subtitle | Card subtitle
@@ -219,24 +206,16 @@ Trigger | Description
 jumbotron-default | Jumbotron default
 jumbotron-fluid | Jumbotron fluid
 
-### Label
-
-Trigger | Description
---- | ---
-label-default | Label default
-label-heading | Label heading
-label-pill | Label pill
-
 ### List
 
 Trigger | Description
 --- | ---
 list-a | List with link
+list-badge | List badge
 list-button | List button
 list-colors | List colors
-list-custom-ul | List custom with unordered list
 list-custom | List custom
-list-minimal-ul | List minimal with unordered list
+list-default | List default
 
 ### Modal
 
@@ -274,6 +253,7 @@ navbar-placement | Navbar placement
 
 Trigger | Description
 --- | ---
+pagination-alignment | Pagination alignment
 pagination-default | Pagination default
 pagination-sized | Pagination sized
 
@@ -323,7 +303,6 @@ image-default | Image default
 Trigger | Description
 --- | ---
 table-default | Table default
-table-responsive | Table responsive
 table-special | Table special
 
 ### Typography
@@ -365,8 +344,8 @@ media-top | Media top
 
 Trigger | Description
 --- | ---
-responsive-print-hide-custom | Responsive print hide custom
-responsive-print-hide | Responsive print hide
+responsive-hide-down | Responsive hide down
+responsive-hide-up | Responsive hide up
 responsive-print-show | Responsive print show
 
 ### Font awesome

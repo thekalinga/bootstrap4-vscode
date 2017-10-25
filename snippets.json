@@ -1,7 +1,7 @@
 {
   "Bootstrap master template" : {
     "prefix" : "b4-$",
-    "body" : "<!doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\"\n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>${1:Title}</title>\n    <link rel=\"stylesheet\" href=\"${2:https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css}\"\n          ${3:integrity=\"sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ\" crossorigin=\"anonymous\"}>\n</head>\n<body>\n  $8$0\n<script src=\"${4:https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js}\"></script>\n<script src=\"${5:https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js}\"></script>\n<script src=\"${6:https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js}\"\n        ${7:integrity=\"sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn\" crossorigin=\"anonymous\"}></script>\n</body>\n</html>",
+    "body" : "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <title>${1:Title}</title>\n    <!-- Required meta tags -->\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n    <!-- Bootstrap CSS -->\n    <link rel=\"stylesheet\" href=\"${2:https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css}\" integrity=\"${3:sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb}\" crossorigin=\"anonymous\">\n  </head>\n  <body>\n      $10$0\n    <!-- Optional JavaScript -->\n    <!-- jQuery first, then Popper.js, then Bootstrap JS -->\n    <script src=\"${4:https://code.jquery.com/jquery-3.2.1.slim.min.js}\" integrity=\"${5:sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN}\" crossorigin=\"anonymous\"></script>\n    <script src=\"${6:https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js}\" integrity=\"${7:sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh}\" crossorigin=\"anonymous\"></script>\n    <script src=\"${8:https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js}\" integrity=\"${9:sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ}\" crossorigin=\"anonymous\"></script>\n  </body>\n</html>",
     "description" : "Bootstrap master template",
     "scope" : ""
   },
@@ -17,135 +17,57 @@
     "description" : "alert closable",
     "scope" : ""
   },
-  "alert danger a" : {
-    "prefix" : "b4-alert-danger-a",
-    "body" : "<div class=\"alert alert-danger\" role=\"alert\">\n\t<strong>${1:Warning!}</strong> <a href=\"${3:#}\" class=\"alert-link\">$2</a>$4\n</div>$0",
-    "description" : "alert danger a",
-    "scope" : ""
-  },
-  "alert danger" : {
-    "prefix" : "b4-alert-danger",
-    "body" : "<div class=\"alert alert-warning\" role=\"alert\">\n    <strong>${1:Warning!}</strong>$2\n</div>$0",
-    "description" : "alert danger",
+  "alert default" : {
+    "prefix" : "b4-alert-default",
+    "body" : "<div class=\"alert alert-${1:primary|secondary|success|danger|warning|info|light|dark}\" role=\"alert\">\n\t<strong>${1:Check it out!}</strong>}$2\n</div>$0",
+    "description" : "alert default",
     "scope" : ""
   },
   "alert dismissible" : {
     "prefix" : "b4-alert-dismissible",
-    "body" : "<div class=\"alert alert-${2:success|info|warning|danger} alert-dismissible fade in\" role=\"alert\">\n\t<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n\t\t<span aria-hidden=\"true\">&times;</span>\n\t\t<span class=\"sr-only\">Close</span>\n\t</button>\n\t${1:<strong>Holy guacamole!</strong> You should check in on some of those fields below.}\n</div>$0",
+    "body" : "<div class=\"alert alert-${2:primary|secondary|success|info|warning|danger|light|dark} alert-dismissible fade in\" role=\"alert\">\n\t<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n\t\t<span aria-hidden=\"true\">&times;</span>\n\t\t<span class=\"sr-only\">Close</span>\n\t</button>\n\t${1:<strong>Holy guacamole!</strong> You should check in on some of those fields below.}\n</div>$0",
     "description" : "alert dismissible",
     "scope" : ""
   },
-  "alert info a" : {
-    "prefix" : "b4-alert-info-a",
-    "body" : "<div class=\"alert alert-info\" role=\"alert\">\n\t<strong>${1:Heads up!}</strong> <a href=\"${3:#}\" class=\"alert-link\">$2</a>$4\n</div>$0",
-    "description" : "alert info a",
+  "alert link" : {
+    "prefix" : "b4-alert-link",
+    "body" : "<div class=\"alert alert-${1:primary|secondary|success|danger|warning|info|light|dark}\" role=\"alert\">\n\t<strong>${2:Warning!}</strong> <a href=\"${4:#}\" class=\"alert-link\">$3</a>$5\n</div>$0",
+    "description" : "alert link",
     "scope" : ""
   },
-  "alert info" : {
-    "prefix" : "b4-alert-info",
-    "body" : "<div class=\"alert alert-info\" role=\"alert\">\n\t<strong>${1:Heads up!}</strong>}$2\n</div>$0",
-    "description" : "alert info",
-    "scope" : ""
-  },
-  "alert success a" : {
-    "prefix" : "b4-alert-success-a",
-    "body" : "<div class=\"alert alert-success\" role=\"alert\">\n\t<strong>${1:Well done!}</strong> <a href=\"${3:#}\" class=\"alert-link\">$2</a>$4\n</div>$0",
-    "description" : "alert success a",
-    "scope" : ""
-  },
-  "alert success" : {
-    "prefix" : "b4-alert-success",
-    "body" : "<div class=\"alert alert-success\" role=\"alert\">\n\t<strong>${1:Well done!}</strong>$2\n</div>$0",
-    "description" : "alert success",
-    "scope" : ""
-  },
-  "alert warning a" : {
-    "prefix" : "b4-alert-warning-a",
-    "body" : "<div class=\"alert alert-warning\" role=\"alert\">\n\t<strong>${1:Warning!}</strong> <a href=\"${3:#}\" class=\"alert-link\">$2</a>$4\n</div>$0",
-    "description" : "alert warning a",
-    "scope" : ""
-  },
-  "alert warning" : {
-    "prefix" : "b4-alert-warning",
-    "body" : "<div class=\"alert alert-warning\" role=\"alert\">\n    <strong>${1:Warning!}</strong>$2\n</div>$0",
-    "description" : "alert warning",
-    "scope" : ""
-  },
-  "badge danger pill" : {
-    "prefix" : "b4-badge-danger-pill",
-    "body" : "<span class=\"badge badge-pill badge-danger\">${1:Danger!}</span>$0",
-    "description" : "badge danger pill",
-    "scope" : ""
-  },
-  "badge danger" : {
-    "prefix" : "b4-badge-danger",
-    "body" : "<span class=\"badge badge-danger\">${1:Danger!}</span>$0",
-    "description" : "badge danger",
-    "scope" : ""
-  },
-  "badge default pill" : {
-    "prefix" : "b4-badge-default-pill",
-    "body" : "<span class=\"badge badge-pill badge-default\">$1</span>$0",
-    "description" : "badge default pill",
+  "badge button" : {
+    "prefix" : "b4-badge-button",
+    "body" : "<button class=\"btn\">\n        ${1:Notification} <span class=\"badge badge-${3:primary|secondary|success|danger|warning|info|light|dark}\">$2</span>\n</button>$0",
+    "description" : "badge button",
     "scope" : ""
   },
   "badge default" : {
     "prefix" : "b4-badge-default",
-    "body" : "<span class=\"badge badge-default\">$1</span>$0",
+    "body" : "<span class=\"badge badge-${1:primary|secondary|success|danger|warning|info|light|dark}\">$2</span>$0",
     "description" : "badge default",
     "scope" : ""
   },
-  "badge info pill" : {
-    "prefix" : "b4-badge-info-pill",
-    "body" : "<span class=\"badge badge-pill badge-info\">${1:Heads up!}</span>$0",
-    "description" : "badge info pill",
+  "badge heading" : {
+    "prefix" : "b4-badge-heading",
+    "body" : "<h${1:1-6}>${3:Example heading}<span class=\"badge badge-${2:primary|secondary|success|danger|warning|info|light|dark}\">${4:New}</span></h${1:1-6}>$0",
+    "description" : "badge heading",
     "scope" : ""
   },
-  "badge info" : {
-    "prefix" : "b4-badge-info",
-    "body" : "<span class=\"badge badge-info\">${1:Heads up!}</span>$0",
-    "description" : "badge info",
+  "badge link" : {
+    "prefix" : "b4-badge-link",
+    "body" : "<a href=\"${2:#}\" class=\"badge badge-${3:primary|secondary|success|danger|warning|info|light|dark}\">$1</a>$0",
+    "description" : "badge link",
     "scope" : ""
   },
-  "badge primary pill" : {
-    "prefix" : "b4-badge-primary-pill",
-    "body" : "<span class=\"badge badge-pill badge-primary\">${1:Primary}</span>$0",
-    "description" : "badge primary pill",
-    "scope" : ""
-  },
-  "badge primary" : {
-    "prefix" : "b4-badge-primary",
-    "body" : "<span class=\"badge badge-primary\">${1:Primary}</span>$0",
-    "description" : "badge primary",
-    "scope" : ""
-  },
-  "badge success pill" : {
-    "prefix" : "b4-badge-success-pill",
-    "body" : "<span class=\"badge badge-pill badge-success\">${1:Success!}</span>$0",
-    "description" : "badge success pill",
-    "scope" : ""
-  },
-  "badge success" : {
-    "prefix" : "b4-badge-success",
-    "body" : "<span class=\"badge badge-success\">${1:Success!}</span>$0",
-    "description" : "badge success",
-    "scope" : ""
-  },
-  "badge warning pill" : {
-    "prefix" : "b4-badge-warning-pill",
-    "body" : "<span class=\"badge badge-pill badge-warning\">${1:Be careful!}</span>$0",
-    "description" : "badge warning pill",
-    "scope" : ""
-  },
-  "badge warning" : {
-    "prefix" : "b4-badge-warning",
-    "body" : "<span class=\"badge badge-warning\">${1:Be careful!}</span>$0",
-    "description" : "badge warning",
+  "badge pill" : {
+    "prefix" : "b4-badge-pill",
+    "body" : "<span class=\"badge badge-pill badge-${1:primary|secondary|success|danger|warning|info|light|dark}\">$2</span>$0",
+    "description" : "badge pill",
     "scope" : ""
   },
   "bgroup default" : {
     "prefix" : "b4-bgroup-default",
-    "body" : "<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|info|warning|danger|link}\">$3</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|info|warning|danger|link}\">$4</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|info|warning|danger|link}\">$5</button>\n</div>$0",
+    "body" : "<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">$3</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">$4</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">$5</button>\n</div>$0",
     "description" : "bgroup default",
     "scope" : ""
   },
@@ -169,7 +91,7 @@
   },
   "bgroup toolbar" : {
     "prefix" : "b4-bgroup-toolbar",
-    "body" : "<div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"$1\">\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger|link}\">$4</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger|link}\">$5</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger|link}\">$6</button>\n\t</div>\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$7\">\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger|link}\">$8</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger|link}\">$9</button>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"$1\">\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$4</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$5</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$6</button>\n\t</div>\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$7\">\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$8</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$9</button>\n\t</div>\n</div>$0",
     "description" : "bgroup toolbar",
     "scope" : ""
   },
@@ -187,169 +109,169 @@
   },
   "button a" : {
     "prefix" : "b4-button-a",
-    "body" : "<a name=\"$4\" id=\"$4\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger}\" href=\"${2:#}\" role=\"button\">$1</a>$0",
+    "body" : "<a name=\"$4\" id=\"$4\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\" href=\"${2:#}\" role=\"button\">$1</a>$0",
     "description" : "button a",
     "scope" : ""
   },
   "button block" : {
     "prefix" : "b4-button-block",
-    "body" : "<button type=\"button\" name=\"$3\" id=\"$3\" class=\"btn btn-${2:primary|secondary|success|info|warning|danger|link} btn-lg btn-block\">$1</button>$0",
+    "body" : "<button type=\"button\" name=\"$3\" id=\"$3\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\" btn-lg btn-block\">$1</button>$0",
     "description" : "button block",
     "scope" : ""
   },
   "button checkbox" : {
     "prefix" : "b4-button-checkbox",
-    "body" : "<div class=\"btn-group\" data-toggle=\"buttons\">\n\t<label class=\"btn btn-${1:primary|secondary|success|info|warning|danger} active\">\n\t\t<input type=\"checkbox\" name=\"$3\" id=\"$3\" checked autocomplete=\"off\">$2\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|info|warning|danger}\">\n\t\t<input type=\"checkbox\" name=\"$5\" id=\"$5\" autocomplete=\"off\">$4\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|info|warning|danger}\">\n\t\t<input type=\"checkbox\" name=\"$7\" id=\"$7\" autocomplete=\"off\">$6\n\t</label>\n</div>$0",
+    "body" : "<div class=\"btn-group\" data-toggle=\"buttons\">\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link} active\">\n\t\t<input type=\"checkbox\" name=\"$3\" id=\"$3\" checked autocomplete=\"off\">$2\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\"checkbox\" name=\"$5\" id=\"$5\" autocomplete=\"off\">$4\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\"checkbox\" name=\"$7\" id=\"$7\" autocomplete=\"off\">$6\n\t</label>\n</div>$0",
     "description" : "button checkbox",
     "scope" : ""
   },
   "button default" : {
     "prefix" : "b4-button-default",
-    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|info|warning|danger|link}\">$1</button>$0",
+    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">$1</button>$0",
     "description" : "button default",
     "scope" : ""
   },
   "button disabled a" : {
     "prefix" : "b4-button-disabled-a",
-    "body" : "<a href=\"${2:#}\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger} ${4:active|disabled}\" role=\"button\">$1</a>$0",
+    "body" : "<a href=\"${2:#}\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link} ${4:active|disabled}\" role=\"button\">$1</a>$0",
     "description" : "button disabled a",
     "scope" : ""
   },
   "button input" : {
     "prefix" : "b4-button-input",
-    "body" : "<input name=\"$2\" id=\"$2\" class=\"btn btn-${3:primary|secondary|success|info|warning|danger}\" type=\"button\" value=\"$1\">$0",
+    "body" : "<input name=\"$2\" id=\"$2\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\" type=\"button\" value=\"$1\">$0",
     "description" : "button input",
     "scope" : ""
   },
   "button outline" : {
     "prefix" : "b4-button-outline",
-    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|info|warning|danger}-outline\">$1</button>$0",
+    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}-outline\">$1</button>$0",
     "description" : "button outline",
     "scope" : ""
   },
   "button radio" : {
     "prefix" : "b4-button-radio",
-    "body" : "<div class=\"btn-group\" data-toggle=\"buttons\">\n\t<label class=\"btn btn-${1:primary|secondary|success|info|warning|danger} active\">\n\t\t<input type=\"radio\" name=\"$3\" id=\"$3\" autocomplete=\"off\" checked>$2\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|info|warning|danger}\">\n\t\t<input type=\"radio\" name=\"$5\" id=\"$5\" autocomplete=\"off\">$4\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|info|warning|danger}\">\n\t\t<input type=\" radio\" name=\"$7\" id=\"$7 \" autocomplete=\"off \">$6\n\t</label>\n</div>$0",
+    "body" : "<div class=\"btn-group\" data-toggle=\"buttons\">\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link} active\">\n\t\t<input type=\"radio\" name=\"$3\" id=\"$3\" autocomplete=\"off\" checked>$2\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\"radio\" name=\"$5\" id=\"$5\" autocomplete=\"off\">$4\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\" radio\" name=\"$7\" id=\"$7 \" autocomplete=\"off \">$6\n\t</label>\n</div>$0",
     "description" : "button radio",
     "scope" : ""
   },
   "button sizes" : {
     "prefix" : "b4-button-sizes",
-    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|info|warning|danger|link} btn-${3:lg|sm}\">$1</button>$0",
+    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link} btn-${3:lg|sm}\">$1</button>$0",
     "description" : "button sizes",
     "scope" : ""
   },
   "button toggle" : {
     "prefix" : "b4-button-toggle",
-    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|info|warning|danger}\" data-toggle=\"button\" aria-pressed=\"false\" autocomplete=\"off\">$1</button>$0",
+    "body" : "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\" data-toggle=\"button\" aria-pressed=\"false\" autocomplete=\"off\">$1</button>$0",
     "description" : "button toggle",
     "scope" : ""
   },
   "card align" : {
     "prefix" : "b4-card-align",
-    "body" : "<div class=\"card\">\n  <img class=\"card-img-top img-fluid\" src=\"${1:holder.js/100%x180/}\" alt=\"$2\">\n  <div class=\"card-block text-xs-${3:left|center|right}\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Body}</p>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card text-${3:left|center|right}\">\n  <img class=\"card-img-top\" src=\"${1:holder.js/100px180/}\" alt=\"$2\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Body}</p>\n  </div>\n</div>$0",
     "description" : "card align",
     "scope" : ""
   },
   "card background custom" : {
     "prefix" : "b4-card-background-custom",
-    "body" : "<div class=\"card card-inverse\" style=\"background-color:${1:cadetblue}; border-color:${2:darkblue};\">\n  <img class=\"card-img-top img-fluid\" src=\"${3:holder.js/100%x180/}\" alt=\"$4\">\n  <div class=\"card-block\">\n    <h4 class=\"card-title\">${5:Title}</h4>\n    <p class=\"card-text\">${6:Text}</p>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card\" style=\"background-color:${1:cadetblue}; border-color:${2:darkblue};\">\n  <img class=\"card-img-top\" src=\"${3:holder.js/100x180/}\" alt=\"$4\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${5:Title}</h4>\n    <p class=\"card-text\">${6:Text}</p>\n  </div>\n</div>$0",
     "description" : "card background custom",
     "scope" : ""
   },
   "card background" : {
     "prefix" : "b4-card-background",
-    "body" : "<div class=\"card card-inverse ${1:card-primary|card-success|card-info|card-warning|card-danger}\">\n  <img class=\"card-img-top img-fluid\" src=\"${2:holder.js/100%x180/}\" alt=\"$3\">\n  <div class=\"card-block\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card text-white bg-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"$3\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0",
     "description" : "card background",
     "scope" : ""
   },
   "card blockquote" : {
     "prefix" : "b4-card-blockquote",
-    "body" : "<div class=\"card\">\n  <div class=\"card-block\">\n    <blockquote class=\"card-blockquote\">\n      <p>${1:Quote}</p>\n      <footer>${2:Footer}<cite title=\"${3:Source title}\">${3:Source title}</cite></footer>\n    </blockquote>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote\">\n      <p>${1:Quote}</p>\n      <footer class=\"card-blockquote\">${2:Footer}<cite title=\"${3:Source title}\">${3:Source title}</cite></footer>\n    </blockquote>\n  </div>\n</div>$0",
     "description" : "card blockquote",
+    "scope" : ""
+  },
+  "card border" : {
+    "prefix" : "b4-card-border",
+    "body" : "<div class=\"card border-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"$3\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0",
+    "description" : "card border",
     "scope" : ""
   },
   "card columns" : {
     "prefix" : "b4-card-columns",
-    "body" : "<div class=\"card-columns\">\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top img-fluid\" src=\"${1:holder.js/100%x180/}\" alt=\"$2\">\n\t\t<div class=\"card-block\">\n\t\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t\t<p class=\"card-text\">${4:Text}</p>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top img-fluid\" src=\"${5:holder.js/100%x180/}\" alt=\"$6\">\n\t\t<div class=\"card-block\">\n\t\t\t<h4 class=\"card-title\">${7:Title}</h4>\n\t\t\t<p class=\"card-text\">${8:Text}</p>\n\t\t</div>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"card-columns\">\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t\t<div class=\"card-body\">\n\t\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t\t<p class=\"card-text\">${4:Text}</p>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" src=\"${5:holder.js/100x180/}\" alt=\"$6\">\n\t\t<div class=\"card-body\">\n\t\t\t<h4 class=\"card-title\">${7:Title}</h4>\n\t\t\t<p class=\"card-text\">${8:Text}</p>\n\t\t</div>\n\t</div>\n</div>$0",
     "description" : "card columns",
     "scope" : ""
   },
   "card decks" : {
     "prefix" : "b4-card-decks",
-    "body" : "<div class=\"card-deck-wrapper\">\n\t<div class=\"card-deck\">\n\t\t<div class=\"card\">\n\t\t\t<img class=\"card-img-top\" src=\"${1:holder.js/100%x180/}\" alt=\"$2\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t\t\t<p class=\"card-text\">${4:Text}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"card\">\n\t\t\t<img class=\"card-img-top\" src=\"${5:holder.js/100%x180/}\" alt=\"$6\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t<h4 class=\"card-title\">${7:Title}</h4>\n\t\t\t\t<p class=\"card-text\">${8:Text}</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"card-deck\">\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t\t<div class=\"card-body\">\n\t\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t\t<p class=\"card-text\">${4:Text}</p>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" src=\"${5:holder.js/100x180/}\" alt=\"$6\">\n\t\t<div class=\"card-body\">\n\t\t\t<h4 class=\"card-title\">${7:Title}</h4>\n\t\t\t<p class=\"card-text\">${8:Text}</p>\n\t\t</div>\n\t</div>\n</div>$0",
     "description" : "card decks",
     "scope" : ""
   },
   "card default" : {
     "prefix" : "b4-card-default",
-    "body" : "<div class=\"card\">\n\t<img class=\"card-img-top\" data-src=\"${1:holder.js/100%x180/}\" alt=\"$2\">\n\t<div class=\"card-block\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"card\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n</div>$0",
     "description" : "card default",
     "scope" : ""
   },
   "card grid" : {
     "prefix" : "b4-card-grid",
-    "body" : "<div class=\"row\">\n  <div class=\"col-${1:xs|sm|md|lg|xl}-${2:1-12}\">\n    <div class=\"card card-block\">\n      <h3 class=\"card-title\">${3:Title}</h3>\n      <p class=\"card-text\">${4:Text}</p>\n    </div>\n  </div>\n  <div class=\"col-${5:xs|sm|md|lg|xl}-${6:1-12}\">\n    <div class=\"card card-block\">\n      <h3 class=\"card-title\">${7:Title}</h3>\n      <p class=\"card-text\">${8:Text}</p>\n    </div>\n  </div>\n</div>$0",
+    "body" : "<div class=\"row\">\n  <div class=\"col-${1:xs|sm|md|lg|xl}-${2:1-12}\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h3 class=\"card-title\">${3:Title}</h3>\n        <p class=\"card-text\">${4:Text}</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-${5:xs|sm|md|lg|xl}-${6:1-12}\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h3 class=\"card-title\">${7:Title}</h3>\n        <p class=\"card-text\">${8:Text}</p>\n      </div>\n    </div>\n  </div>\n</div>$0",
     "description" : "card grid",
     "scope" : ""
   },
   "card groups" : {
     "prefix" : "b4-card-groups",
-    "body" : "<div class=\"card-group\">\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" data-src=\"${1:holder.js/100%x180/}\" alt=\"${2:Card image cap}\">\n\t\t<div class=\"card-block\">\n\t\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t\t<p class=\"card-text\">${4:Text}</p>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" data-src=\"${5:holder.js/100%x180/}\" alt=\"${6:Card image cap}\">\n\t\t<div class=\"card-block\">\n\t\t\t<h4 class=\"card-title\">${7:Title}</h4>\n\t\t\t<p class=\"card-text\">${8:Text}</p>\n\t\t</div>\n\t</div>\n</div>\n</div>$0",
+    "body" : "<div class=\"card-group\">\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" data-src=\"${1:holder.js/100x180/}\" alt=\"${2:Card image cap}\">\n\t\t<div class=\"card-body\">\n\t\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t\t<p class=\"card-text\">${4:Text}</p>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<img class=\"card-img-top\" data-src=\"${5:holder.js/100x180/}\" alt=\"${6:Card image cap}\">\n\t\t<div class=\"card-body\">\n\t\t\t<h4 class=\"card-title\">${7:Title}</h4>\n\t\t\t<p class=\"card-text\">${8:Text}</p>\n\t\t</div>\n\t</div>\n</div>\n</div>$0",
     "description" : "card groups",
     "scope" : ""
   },
   "card head foot" : {
     "prefix" : "b4-card-head-foot",
-    "body" : "<div class=\"card\">\n\t<div class=\"card-header\">\n\t\t${1:Header}\n\t</div>\n\t<div class=\"card-block\">\n\t\t<h4 class=\"card-title\">${2:Header}</h4>\n\t\t<p class=\"card-text\">${3:Header}</p>\n\t</div>\n\t<div class=\"card-footer text-muted\">\n\t\t${4:Header}\n\t</div>\n</div>$0",
+    "body" : "<div class=\"card\">\n\t<div class=\"card-header\">\n\t\t${1:Header}\n\t</div>\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${2:Title}</h4>\n\t\t<p class=\"card-text\">${3:Text}</p>\n\t</div>\n\t<div class=\"card-footer text-muted\">\n\t\t${4:Footer}\n\t</div>\n</div>$0",
     "description" : "card head foot",
     "scope" : ""
   },
   "card links" : {
     "prefix" : "b4-card-links",
-    "body" : "<div class=\"card\">\n\t<img class=\"card-img-top\" data-src=\"${1:holder.js/100%x180/?text=Image cap}\" alt=\"${2:Card image cap}\">\n\t<div class=\"card-block\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n\t<div class=\"card-block\">\n\t\t<a href=\"${6:#}\" class=\"card-link\">${5:Card link}</a>\n\t\t<a href=\"${8:#}\" class=\"card-link\">${7:Another link}</a>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"card\">\n\t<img class=\"card-img-top\" data-src=\"${1:holder.js/100x180/?text=Image cap}\" alt=\"${2:Card image cap}\">\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n\t<div class=\"card-body\">\n\t\t<a href=\"${6:#}\" class=\"card-link\">${5:Card link}</a>\n\t\t<a href=\"${8:#}\" class=\"card-link\">${7:Another link}</a>\n\t</div>\n</div>$0",
     "description" : "card links",
     "scope" : ""
   },
   "card list" : {
     "prefix" : "b4-card-list",
-    "body" : "<div class=\"card\">\n\t<img class=\"card-img-top\" data-src=\"${1:holder.js/100%x180/?text=Image cap}\" alt=\"${2:Card image cap}\">\n\t<div class=\"card-block\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n\t<ul class=\"list-group list-group-flush\">\n\t\t<li class=\"list-group-item\">${5:Item 1}</li>\n\t\t<li class=\"list-group-item\">${6:Item 2}</li>\n\t</ul>\n</div>$0",
+    "body" : "<div class=\"card\">\n\t<img class=\"card-img-top\" data-src=\"${1:holder.js/100x180/?text=Image cap}\" alt=\"${2:Card image cap}\">\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n\t<ul class=\"list-group list-group-flush\">\n\t\t<li class=\"list-group-item\">${5:Item 1}</li>\n\t\t<li class=\"list-group-item\">${6:Item 2}</li>\n\t\t<li class=\"list-group-item\">${7:Item 3}</li>\n\t</ul>\n</div>$0",
     "description" : "card list",
-    "scope" : ""
-  },
-  "card outline" : {
-    "prefix" : "b4-card-outline",
-    "body" : "<div class=\"card card-outline-${1:primary|secondary|success|info|warning|danger}\">\n  <img class=\"card-img-top img-fluid\" src=\"${2:holder.js/100%x180/}\" alt=\"$3\">\n  <div class=\"card-block\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0",
-    "description" : "card outline",
     "scope" : ""
   },
   "card overlay" : {
     "prefix" : "b4-card-overlay",
-    "body" : "<div class=\"card card-inverse\">\n  <img class=\"card-img-top img-fluid\" src=\"${1:holder.js/100%x180/}\" alt=\"$2\">\n  <div class=\"card-img-overlay\">\n    <h4 class=\"card-title\">${3:Title}</h4>\n    <p class=\"card-text\">${4:Text}</p>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card bg-dark text-white\">\n  <img class=\"card-img\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n  <div class=\"card-img-overlay\">\n    <h4 class=\"card-title\">${3:Title}</h4>\n    <p class=\"card-text\">${4:Text}</p>\n  </div>\n</div>$0",
     "description" : "card overlay",
     "scope" : ""
   },
   "card pill head" : {
     "prefix" : "b4-card-pill-head",
-    "body" : "<div class=\"card text-xs-center\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-pills card-header-pills float-xs-left\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${2:#}\">${1:Active pill}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${4:#}\">${3:Pill}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"${6:#}\">${5:Disabled pill}</a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"card-block\">\n    <h4 class=\"card-title\">${7:Title}</h4>\n    <p class=\"card-text\">${8:Body}</p>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card text-center\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-pills card-header-pills\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${2:#}\">${1:Active pill}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${4:#}\">${3:Pill}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"${6:#}\">${5:Disabled pill}</a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${7:Title}</h4>\n    <p class=\"card-text\">${8:Body}</p>\n  </div>\n</div>$0",
     "description" : "card pill head",
     "scope" : ""
   },
   "card subtitle" : {
     "prefix" : "b4-card-subtitle",
-    "body" : "<div class=\"card\">\n  <div class=\"card-block\">\n    <h4 class=\"card-title\">${1:Title}</h4>\n    <h6 class=\"card-subtitle text-muted\">${2:Subtitle}</h6>\n  </div>\n  <img src=\"${3:holder.js/100%x180/}\" alt=\"$4\">\n  <div class=\"card-block\">\n    <p class=\"card-text\">${5:Text}</p>\n    <a href=\"${7:#}\" class=\"card-link\">${6:Link 1}</a>\n    <a href=\"${9:#}\" class=\"card-link\">${8:Link 2}</a>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${1:Title}</h4>\n    <h6 class=\"card-subtitle text-muted\">${2:Subtitle}</h6>\n  </div>\n  <img src=\"${3:holder.js/100x180/}\" alt=\"$4\">\n  <div class=\"card-body\">\n    <p class=\"card-text\">${5:Text}</p>\n    <a href=\"${7:#}\" class=\"card-link\">${6:Link 1}</a>\n    <a href=\"${9:#}\" class=\"card-link\">${8:Link 2}</a>\n  </div>\n</div>$0",
     "description" : "card subtitle",
     "scope" : ""
   },
   "card tab head" : {
     "prefix" : "b4-card-tab-head",
-    "body" : "<div class=\"card text-xs-center\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-tabs card-header-tabs float-xs-left\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${2:#}\">${1:Active tab}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${4:#}\">${3:Tab}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"${6:#}\">${5:Disabled tab}</a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"card-block\">\n    <h4 class=\"card-title\">${7:Title}</h4>\n    <p class=\"card-text\">${8:Body}</p>\n  </div>\n</div>$0",
+    "body" : "<div class=\"card text-center\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-tabs card-header-tabs\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${2:#}\">${1:Active tab}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${4:#}\">${3:Tab}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"${6:#}\">${5:Disabled tab}</a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${7:Title}</h4>\n    <p class=\"card-text\">${8:Body}</p>\n  </div>\n</div>$0",
     "description" : "card tab head",
     "scope" : ""
   },
   "carousel caption" : {
     "prefix" : "b4-carousel-caption",
-    "body" : "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-target=\"#${1:carouselId}\" data-slide-to=\"0\" class=\"active\"></li>\n\t\t<li data-target=\"#${1:carouselId}\" data-slide-to=\"1\"></li>\n\t\t<li data-target=\"#${1:carouselId}\" data-slide-to=\"2\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img data-src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t<h3>${4:Title}</h3>\n\t\t\t\t<p>${5:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img data-src=\"${6:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${7:Second slide}\">\n\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t<h3>${8:Title}</h3>\n\t\t\t\t<p>${9:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img data-src=\"${10:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${11:Third slide}\">\n\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t<h3>${12:Title}</h3>\n\t\t\t\t<p>${13:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<a class=\"carousel-control-prev\" href=\"#${1:carouselId}\" role=\"button\" data-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"sr-only\">Previous</span>\n\t</a>\n\t<a class=\"carousel-control-next\" href=\"#${1:carouselId}\" role=\"button\" data-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"sr-only\">Next</span>\n\t</a>\n</div>$0",
+    "body" : "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-target=\"#${1:carouselId}\" data-slide-to=\"0\" class=\"active\"></li>\n\t\t<li data-target=\"#${1:carouselId}\" data-slide-to=\"1\"></li>\n\t\t<li data-target=\"#${1:carouselId}\" data-slide-to=\"2\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img data-src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${4:Title}</h3>\n\t\t\t\t<p>${5:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img data-src=\"${6:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${7:Second slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${8:Title}</h3>\n\t\t\t\t<p>${9:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img data-src=\"${10:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${11:Third slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${12:Title}</h3>\n\t\t\t\t<p>${13:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<a class=\"carousel-control-prev\" href=\"#${1:carouselId}\" role=\"button\" data-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"sr-only\">Previous</span>\n\t</a>\n\t<a class=\"carousel-control-next\" href=\"#${1:carouselId}\" role=\"button\" data-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"sr-only\">Next</span>\n\t</a>\n</div>$0",
     "description" : "carousel caption",
     "scope" : ""
   },
@@ -361,7 +283,7 @@
   },
   "collapse accordion" : {
     "prefix" : "b4-collapse-accordion",
-    "body" : "<div id=\"${1:accordianId}\" role=\"tablist\" aria-multiselectable=\"true\">\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${3:section1HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${5:section1ContentId}\" aria-expanded=\"true\" aria-controls=\"${5:section1ContentId}\">\n          ${2:Section 1}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${5:section1ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${3:section1HeaderId}\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t${4:Section 1 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${7:section2HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${9:section2ContentId}\" aria-expanded=\"true\" aria-controls=\"${9:section2ContentId}\">\n          ${6:Section 2}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${9:section2ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${7:section2HeaderId}\">\n\t\t\t<div class=\"card-block\">\n\t\t\t\t${8:Section 2 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>$0",
+    "body" : "<div id=\"${1:accordianId}\" role=\"tablist\" aria-multiselectable=\"true\">\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${3:section1HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${5:section1ContentId}\" aria-expanded=\"true\" aria-controls=\"${5:section1ContentId}\">\n          ${2:Section 1}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${5:section1ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${3:section1HeaderId}\">\n\t\t\t<div class=\"card-body\">\n\t\t\t\t${4:Section 1 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"card\">\n\t\t<div class=\"card-header\" role=\"tab\" id=\"${7:section2HeaderId}\">\n\t\t\t<h5 class=\"mb-0\">\n\t\t\t\t<a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${9:section2ContentId}\" aria-expanded=\"true\" aria-controls=\"${9:section2ContentId}\">\n          ${6:Section 2}\n        </a>\n\t\t\t</h5>\n\t\t</div>\n\t\t<div id=\"${9:section2ContentId}\" class=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${7:section2HeaderId}\">\n\t\t\t<div class=\"card-body\">\n\t\t\t\t${8:Section 2 content}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>$0",
     "description" : "collapse accordion",
     "scope" : ""
   },
@@ -397,13 +319,13 @@
   },
   "dropdown colored" : {
     "prefix" : "b4-dropdown-colored",
-    "body" : "<div class=\"dropdown open\">\n\t<button class=\"btn btn-${2:secondary|primary|success|info|warning|danger} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"dropdown open\">\n\t<button class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t</div>\n</div>$0",
     "description" : "dropdown colored",
     "scope" : ""
   },
   "dropdown default" : {
     "prefix" : "b4-dropdown-default",
-    "body" : "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"dropdown\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0",
     "description" : "dropdown default",
     "scope" : ""
   },
@@ -439,7 +361,7 @@
   },
   "form checkbox inline" : {
     "prefix" : "b4-form-checkbox-inline",
-    "body" : "<label class=\"checkbox-inline\">\n\t<input type=\"checkbox\" name=\"$2\" id=\"$2\" value=\"${3:checkedValue}\">${1:Display value}\n</label>$0",
+    "body" : "<div class=\"form-check form-check-inline\">\n\t<label class=\"form-check-label\">\n\t\t<input class=\"form-check-input\" type=\"checkbox\" name=\"$2\" id=\"$2\" value=\"${3:checkedValue}\"> ${1:Display value}\n\t</label>\n</div>$0",
     "description" : "form checkbox inline",
     "scope" : ""
   },
@@ -565,7 +487,7 @@
   },
   "form radio inline" : {
     "prefix" : "b4-form-radio-inline",
-    "body" : "<label class=\"checkbox-inline\">\n\t<input type=\"radio\" name=\"$2\" id=\"$2\" value=\"${3:checkedValue}\">${1:Display value}\n</label>$0",
+    "body" : "<div class=\"form-check form-check-inline\">\n\t<label class=\"form-check-label\">\n\t\t<input class=\"form-check-input\" type=\"radio\" name=\"$2\" id=\"$2\" value=\"${3:checkedValue}\"> ${1:Display value}\n\t</label>\n</div>$0",
     "description" : "form radio inline",
     "scope" : ""
   },
@@ -583,7 +505,7 @@
   },
   "form reset" : {
     "prefix" : "b4-form-reset",
-    "body" : "<button type=\"reset\" class=\"btn btn-${2:danger|primary|secondary|success|info|warning}\">${1:Reset}</button>$0",
+    "body" : "<button type=\"reset\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">${1:Reset}</button>$0",
     "description" : "form reset",
     "scope" : ""
   },
@@ -607,7 +529,7 @@
   },
   "form submit" : {
     "prefix" : "b4-form-submit",
-    "body" : "<button type=\"submit\" class=\"btn btn-${2:primary|secondary|success|info|warning|danger}\">${1:Submit}</button>$0",
+    "body" : "<button type=\"submit\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">${1:Submit}</button>$0",
     "description" : "form submit",
     "scope" : ""
   },
@@ -619,7 +541,7 @@
   },
   "form validation" : {
     "prefix" : "b4-form-validation",
-    "body" : "<div class=\"form-group ${1:has-succes|has-warning|has-danger}\">\n\t<label class=\"form-control-label\" for=\"${3:inputName}\">${2:Input label}</label>\n\t<input type=\"text\" class=\"form-control form-control-success\" name=\"${3:inputName}\" id=\"${3:inputName}\" aria-describedby=\"${5:helpId}\">\n\t<div class=\"form-control-feedback\">${4:Validation message}</div>\n\t<small id=\"${5:helpId}\" class=\"form-text text-muted\">${6:Help text}</small>\n</div>$0",
+    "body" : "<label for=\"${2:inputName}\">${1:Input label}</label>\n<input type=\"text\" class=\"form-control ${3:is-valid|is-invalid}\" name=\"${2:inputName}\" id=\"${2:inputName}\">\n<div class=\"invalid-feedback\">\n\t${4:Validation message}\n</div>\n<!-- TODO: This is for server side, there is another version for browser defaults -->$0",
     "description" : "form validation",
     "scope" : ""
   },
@@ -683,28 +605,16 @@
     "description" : "jumbotron fluid",
     "scope" : ""
   },
-  "label default" : {
-    "prefix" : "b4-label-default",
-    "body" : "<span class=\"label label-${2:default|primary|success|info|warning|danger}\">$1</span>$0",
-    "description" : "label default",
-    "scope" : ""
-  },
-  "label heading" : {
-    "prefix" : "b4-label-heading",
-    "body" : "<h${1:1-6}>${2:Example heading}<span class=\"label label-default\">${3:New}</span></h${1:1-6}>$0",
-    "description" : "label heading",
-    "scope" : ""
-  },
-  "label pill" : {
-    "prefix" : "b4-label-pill",
-    "body" : "<span class=\"label label-pill label-${2:default|primary|success|info|warning|danger}\">$1</span>$0",
-    "description" : "label pill",
-    "scope" : ""
-  },
   "list a" : {
     "prefix" : "b4-list-a",
     "body" : "<div class=\"list-group\">\n\t<a href=\"${2:#}\" class=\"list-group-item list-group-item-action active\">${1:Active item}</a>\n\t<a href=\"${4:#}\" class=\"list-group-item list-group-item-action\">${3:Item}</a>\n\t<a href=\"${6:#}\" class=\"list-group-item list-group-item-action disabled\">${5:Disabled item}</a>\n</div>$0",
     "description" : "list a",
+    "scope" : ""
+  },
+  "list badge" : {
+    "prefix" : "b4-list-badge",
+    "body" : "<ul class=\"list-group\">\n\t<li class=\"list-group-item d-flex justify-content-between align-items-center active\">\n\t\t${1:Active list item}\n\t\t<span class=\"badge badge-secondary badge-pill\">${2:pill1}</span>\n\t</li>\n\t<li class=\"list-group-item d-flex justify-content-between align-items-center\">\n\t\t${3:List item}\n\t\t<span class=\"badge badge-secondary badge-pill\">${4:pill2}</span>\n\t</li>\n\t<li class=\"list-group-item d-flex justify-content-between align-items-center disabled\">\n\t\t${5:Disabled item}\n\t\t<span class=\"badge badge-secondary badge-pill\">${6:pill3}</span>\n\t</li>\n</ul>$0",
+    "description" : "list badge",
     "scope" : ""
   },
   "list button" : {
@@ -715,26 +625,20 @@
   },
   "list colors" : {
     "prefix" : "b4-list-colors",
-    "body" : "<div class=\"list-group\">\n\t<a href=\"${2:#}\" class=\"list-group-item list-group-item-action list-group-item-${3:success|info|warning|danger} active\">${1:Active item}</a>\n\t<a href=\"${5:#}\" class=\"list-group-item list-group-item-action list-group-item-${6:success|info|warning|danger}\">${4:Item}</a>\n\t<a href=\"${8:#}\" class=\"list-group-item list-group-item-action list-group-item-${9:success|info|warning|danger} disabled\">${7:Disabled item}</a>\n</div>$0",
+    "body" : "<div class=\"list-group\">\n\t<a href=\"${2:#}\" class=\"list-group-item list-group-item-action list-group-item-${3:primary|secondary|success|danger|warning|info|light|dark} active\">${1:Active item}</a>\n\t<a href=\"${5:#}\" class=\"list-group-item list-group-item-action list-group-item-${6:primary|secondary|success|danger|warning|info|light|dark}\">${4:Item}</a>\n\t<a href=\"${8:#}\" class=\"list-group-item list-group-item-action list-group-item-${9:primary|secondary|success|danger|warning|info|light|dark} disabled\">${7:Disabled item}</a>\n</div>$0",
     "description" : "list colors",
-    "scope" : ""
-  },
-  "list custom ul" : {
-    "prefix" : "b4-list-custom-ul",
-    "body" : "<ul class=\"list-group\">\n\t<li class=\"list-group-item active\">\n\t\t<span class=\"tag tag-default tag-pill float-xs-right\">${2:pill1}</span> ${1:Active list item}\n\t</li>\n\t<li class=\"list-group-item\">\n\t\t<span class=\"tag tag-default tag-pill float-xs-right\">${4:pill2}</span> ${3:List item}\n\t</li>\n\t<li class=\"list-group-item disabled\">\n\t\t<span class=\"tag tag-default tag-pill float-xs-right\">${6:pill3}</span> ${5:Disabled item}\n\t</li>\n</ul>$0",
-    "description" : "list custom ul",
     "scope" : ""
   },
   "list custom" : {
     "prefix" : "b4-list-custom",
-    "body" : "<div class=\"list-group\">\n\t<a href=\"${2:#}\" class=\"list-group-item list-group-item-action active\">${1:Active item}</a>\n\t<a href=\"${4:#}\" class=\"list-group-item list-group-item-action\">${3:Item}</a>\n\t<a href=\"${6:#}\" class=\"list-group-item list-group-item-action disabled\">${5:Disabled item}</a>\n</div>$0",
+    "body" : "<div class=\"list-group\">\n\t<a href=\"${1:#}\" class=\"list-group-item list-group-item-action flex-column align-items-start active\">\n\t\t<div class=\"d-flex w-100 justify-content-between\">\n\t\t\t<h5 class=\"mb-1\">${2:Heading}</h5>\n\t\t\t<small>${3:small}</small>\n\t\t</div>\n\t\t<p class=\"mb-1\">${4:Paragraph}</p>\n\t\t<small>${5:paragraph footer}</small>\n\t</a>\n\t<a href=\"${6:#}\" class=\"list-group-item list-group-item-action flex-column align-items-start\">\n\t\t<div class=\"d-flex w-100 justify-content-between\">\n\t\t\t<h5 class=\"mb-1\">${7:Heading}</h5>\n\t\t\t<small>${8:small}</small>\n\t\t</div>\n\t\t<p class=\"mb-1\">${9:Paragraph}</p>\n\t\t<small>${10:paragraph footer}</small>\n\t</a>\n\t<a href=\"${11:#}\" class=\"list-group-item list-group-item-action flex-column align-items-start disabled\">\n\t\t<div class=\"d-flex w-100 justify-content-between\">\n\t\t\t<h5 class=\"mb-1\">${12:Heading}</h5>\n\t\t\t<small>${13:small}</small>\n\t\t</div>\n\t\t<p class=\"mb-1\">${14:Paragraph}</p>\n\t\t<small>${15:paragraph footer}</small>\n\t</a>\n</div>$0",
     "description" : "list custom",
     "scope" : ""
   },
-  "list minimal ul" : {
-    "prefix" : "b4-list-minimal-ul",
+  "list default" : {
+    "prefix" : "b4-list-default",
     "body" : "<ul class=\"list-group\">\n\t<li class=\"list-group-item active\">${1:Active item}</li>\n\t<li class=\"list-group-item\">${2:Item}</li>\n\t<li class=\"list-group-item disabled\">${3:Disabled item}</li>\n</ul>$0",
-    "description" : "list minimal ul",
+    "description" : "list default",
     "scope" : ""
   },
   "modal customize" : {
@@ -763,7 +667,7 @@
   },
   "nav a" : {
     "prefix" : "b4-nav-a",
-    "body" : "<nav class=\"nav ${1:nav-inline}\">\n  <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n  <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n  <a class=\"nav-link disabled\" href=\"#\">${6:Disabled link}</a>\n</nav>$0",
+    "body" : "<nav class=\"nav ${1:justify-content-center|justify-content-end}\">\n  <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n  <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n  <a class=\"nav-link disabled\" href=\"#\">${6:Disabled link}</a>\n</nav>$0",
     "description" : "nav a",
     "scope" : ""
   },
@@ -793,50 +697,56 @@
   },
   "nav ul" : {
     "prefix" : "b4-nav-ul",
-    "body" : "<ul class=\"nav ${1:nav-inline}\">\n  <li class=\"nav-item\">\n    <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n  </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n  </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link disabled\" href=\"#\">${6:Disabled link}</a>\n  </li>\n</ul>$0",
+    "body" : "<ul class=\"nav ${1:justify-content-center|justify-content-end}\">\n    <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n    </li>\n    <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n    </li>\n    <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"#\">${6:Disabled link}</a>\n    </li>\n</ul>$0",
     "description" : "nav ul",
     "scope" : ""
   },
   "navbar background color" : {
     "prefix" : "b4-navbar-background-color",
-    "body" : "<nav class=\"navbar navbar-light\" style=\"background-color: ${1:#e3f2fd};\">\n  <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\"\n          data-target=\"#${2:collapsibleNavId}\" aria-controls=\"${2:collapsibleNavId}\"\n    aria-expanded=\"false\" aria-label=\"${3:Toggle navigation}\"></button>\n  <div class=\"collapse navbar-toggleable-md\" id=\"${2:collapsibleNavId}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:My App/Logo with Text}</a>\n    <ul class=\"nav navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"${7:#}\">${6:Nav 1} <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${9:#}\">${8:Nav 2}</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\"\n           data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Nav 3 dropdown}</a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n          <a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n          <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n        </div>\n      </li>\n    </ul>\n    <form class=\"form-inline float-xs-right\">\n      <input class=\"form-control\" type=\"text\" placeholder=\"${17:Search}\">\n      <button class=\"btn btn-outline-success\" type=\"submit\">${17:Search}</button>\n    </form>\n  </div>\n</nav>$0",
+    "body" : "<nav class=\"navbar navbar-expand-${1:sm|md|lg|-xl} navbar-${2:dark|light}\" style=\"background-color: ${3:#e3f2fd;}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a>\n    <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#${6:collapsibleNavId}\" aria-controls=\"${6:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${7:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${6:collapsibleNavId}\">\n        <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"${9:#}\">${8:Home} <span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"${11:#}\">${10:Link}</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" href=\"${13:#}\" id=\"${14:dropdownId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${12:Dropdown}</a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"${14:dropdownId}\">\n                    <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 1}</a>\n                    <a class=\"dropdown-item\" href=\"${18:#}\">${17:Action 2}</a>\n                </div>\n            </li>\n        </ul>\n        <form class=\"form-inline my-2 my-lg-0\">\n            <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"${19:Search}\">\n            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${20:Search}</button>\n        </form>\n    </div>\n</nav>$0",
     "description" : "navbar background color",
     "scope" : ""
   },
   "navbar background" : {
     "prefix" : "b4-navbar-background",
-    "body" : "<nav class=\"navbar navbar-dark navbar-{1:inverse|primary}\">\n  <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\"\n          data-target=\"#${2:collapsibleNavId}\" aria-controls=\"${2:collapsibleNavId}\"\n    aria-expanded=\"false\" aria-label=\"${3:Toggle navigation}\"></button>\n  <div class=\"collapse navbar-toggleable-md\" id=\"${2:collapsibleNavId}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:My App/Logo with Text}</a>\n    <ul class=\"nav navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"${7:#}\">${6:Nav 1} <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${9:#}\">${8:Nav 2}</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\"\n           data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Nav 3 dropdown}</a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n          <a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n          <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n        </div>\n      </li>\n    </ul>\n    <form class=\"form-inline float-xs-right\">\n      <input class=\"form-control\" type=\"text\" placeholder=\"${17:Search}\">\n      <button class=\"btn btn-outline-success\" type=\"submit\">${17:Search}</button>\n    </form>\n  </div>\n</nav>$0",
+    "body" : "<nav class=\"navbar navbar-expand-${1:sm|md|lg|-xl} navbar-${2:dark|light} bg-${3:primary|secondary|success|danger|warning|info|light|dark}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a>\n    <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#${6:collapsibleNavId}\" aria-controls=\"${6:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${7:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${6:collapsibleNavId}\">\n        <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"${9:#}\">${8:Home} <span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"${11:#}\">${10:Link}</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" href=\"${13:#}\" id=\"${14:dropdownId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${12:Dropdown}</a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"${14:dropdownId}\">\n                    <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 1}</a>\n                    <a class=\"dropdown-item\" href=\"${18:#}\">${17:Action 2}</a>\n                </div>\n            </li>\n        </ul>\n        <form class=\"form-inline my-2 my-lg-0\">\n            <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"${19:Search}\">\n            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${20:Search}</button>\n        </form>\n    </div>\n</nav>$0",
     "description" : "navbar background",
     "scope" : ""
   },
   "navbar default" : {
     "prefix" : "b4-navbar-default",
-    "body" : "<nav class=\"navbar navbar-light bg-faded\">\n\t<button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\"\n\t\t\tdata-target=\"#${1:collapsibleNavId}\" aria-controls=\"${1:collapsibleNavId}\"\n\t\t\taria-expanded=\"false\" aria-label=\"${2:Toggle navigation}\"></button>\n\t<div class=\"collapse navbar-toggleable-md\" id=\"${1:collapsibleNavId}\">\n\t\t<a class=\"navbar-brand\" href=\"${4:#}\">${3:My App/Logo with Text}</a>\n\t\t<ul class=\"nav navbar-nav\">\n\t\t\t<li class=\"nav-item active\">\n\t\t\t\t<a class=\"nav-link\" href=\"${6:#}\">${5:Nav 1} <span class=\"sr-only\">(current)</span></a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a class=\"nav-link\" href=\"${8:#}\">${7:Nav 2}</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"${10:#}\" id=\"${11:dropdownId}\"\n\t\t\t\t   data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${9:Nav 3 dropdown}</a>\n\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${11:dropdownId}\">\n\t\t\t\t\t<a class=\"dropdown-item\" href=\"${13:#}\">${12:Action 1}</a>\n\t\t\t\t\t<a class=\"dropdown-item\" href=\"${15:#}\">${14:Action 2}</a>\n\t\t\t\t</div>\n\t\t\t</li>\n\t\t</ul>\n\t\t<form class=\"form-inline float-xs-right\">\n\t\t\t<input class=\"form-control\" type=\"text\" placeholder=\"${16:Search}\">\n\t\t\t<button class=\"btn btn-outline-success\" type=\"submit\">${16:Search}</button>\n\t\t</form>\n\t</div>\n</nav>$0",
+    "body" : "<nav class=\"navbar navbar-expand-${1:sm|md|lg|-xl} navbar-light bg-light\">\n\t<a class=\"navbar-brand\" href=\"${3:#}\">${2:Navbar}</a>\n\t<button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#${4:collapsibleNavId}\" aria-controls=\"${4:collapsibleNavId}\"\n\t    aria-expanded=\"false\" aria-label=\"${5:Toggle navigation}\"></button>\n\t<div class=\"collapse navbar-collapse\" id=\"${4:collapsibleNavId}\">\n\t\t<ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\n\t\t\t<li class=\"nav-item active\">\n\t\t\t\t<a class=\"nav-link\" href=\"${7:#}\">${6:Home} <span class=\"sr-only\">(current)</span></a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a class=\"nav-link\" href=\"${9:#}\">${8:Link}</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Dropdown}</a>\n\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n\t\t\t\t\t<a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n\t\t\t\t\t<a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n\t\t\t\t</div>\n\t\t\t</li>\n\t\t</ul>\n\t\t<form class=\"form-inline my-2 my-lg-0\">\n\t\t\t<input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n\t\t</form>\n\t</div>\n</nav>$0",
     "description" : "navbar default",
     "scope" : ""
   },
   "navbar minimal a" : {
     "prefix" : "b4-navbar-minimal-a",
-    "body" : "<nav class=\"navbar navbar-light bg-faded\">\n  <div class=\"nav navbar-nav\">\n    <a class=\"nav-item nav-link active\" href=\"${2:#}\">${1:Home} <span class=\"sr-only\">(current)</span></a>\n    <a class=\"nav-item nav-link\" href=\"${4:#}\">${3:Home}</a>\n  </div>\n</nav>$0",
+    "body" : "<nav class=\"navbar navbar-expand navbar-light bg-light\">\n    <div class=\"nav navbar-nav\">\n        <a class=\"nav-item nav-link active\" href=\"${2:#}\">${1:Home} <span class=\"sr-only\">(current)</span></a>\n        <a class=\"nav-item nav-link\" href=\"${4:#}\">${3:Home}</a>\n    </div>\n</nav>$0",
     "description" : "navbar minimal a",
     "scope" : ""
   },
   "navbar minimal ul" : {
     "prefix" : "b4-navbar-minimal-ul",
-    "body" : "<nav class=\"navbar navbar-light bg-faded\">\n  <ul class=\"nav navbar-nav\">\n    <li class=\"nav-item active\">\n      <a class=\"nav-link\" href=\"${2:#}\">${1:Nav 1} <span class=\"sr-only\">(current)</span></a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"${4:#}\">${3:Nav 2}</a>\n    </li>\n  </ul>\n</nav>$0",
+    "body" : "<nav class=\"navbar navbar-expand navbar-light bg-light\">\n    <ul class=\"nav navbar-nav\">\n        <li class=\"nav-item active\">\n            <a class=\"nav-link\" href=\"${2:#}\">${1:Nav 1} <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"${4:#}\">${3:Nav 2}</a>\n        </li>\n    </ul>\n</nav>$0",
     "description" : "navbar minimal ul",
     "scope" : ""
   },
   "navbar non responsive" : {
     "prefix" : "b4-navbar-non-responsive",
-    "body" : "<nav class=\"navbar navbar-light bg-faded\">\n  <a class=\"navbar-brand\" href=\"${2:#}\">${1:My App/Logo with Text}</a>\n  <ul class=\"nav navbar-nav\">\n    <li class=\"nav-item active\">\n      <a class=\"nav-link\" href=\"${4:#}\">${3:Nav 1} <span class=\"sr-only\">(current)</span></a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"${6:#}\">${5:Nav 2}</a>\n    </li>\n    <li class=\"nav-item dropdown\">\n      <a class=\"nav-link dropdown-toggle\" href=\"${8:#}\" id=\"${9:dropdownId}\"\n         data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${7:Nav 3 dropdown}</a>\n      <div class=\"dropdown-menu\" aria-labelledby=\"${9:dropdownId}\">\n        <a class=\"dropdown-item\" href=\"${11:#}\">${10:Action 1}</a>\n        <a class=\"dropdown-item\" href=\"${13:#}\">${12:Action 2}</a>\n      </div>\n    </li>\n  </ul>\n  <form class=\"form-inline float-xs-right\">\n    <input class=\"form-control\" type=\"text\" placeholder=\"${14:Search}\">\n    <button class=\"btn btn-outline-success\" type=\"submit\">${14:Search}</button>\n  </form>\n</nav>$0",
+    "body" : "<nav class=\"navbar navbar-expand navbar-light bg-faded\">\n    <a class=\"navbar-brand\" href=\"${2:#}\">${1:Navbar}</a>\n    <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\n        <li class=\"nav-item active\">\n            <a class=\"nav-link\" href=\"${4:#}\">${3:Active} <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"${6:#}\">${5:Link}</a>\n        </li>\n        <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle\" href=\"${8:#}\" id=\"${9:dropdownId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${7:Dropdown}</a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"${9:dropdownId}\">\n                <a class=\"dropdown-item\" href=\"${11:#}\">${10:Action 1}</a>\n                <a class=\"dropdown-item\" href=\"${13:#}\">${12:Action 2}</a>\n            </div>\n        </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n        <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n        <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n    </form>\n</nav>$0",
     "description" : "navbar non responsive",
     "scope" : ""
   },
   "navbar placement" : {
     "prefix" : "b4-navbar-placement",
-    "body" : "<nav class=\"navbar navbar-light bg-faded navbar-${1:full|fixed-top|fixed-bottom}\">\n  <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\"\n          data-target=\"#${2:collapsibleNavId}\" aria-controls=\"${2:collapsibleNavId}\"\n          aria-expanded=\"false\" aria-label=\"${3:Toggle navigation}\"></button>\n  <div class=\"collapse navbar-toggleable-md\" id=\"${2:collapsibleNavId}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:My App/Logo with Text}</a>\n    <ul class=\"nav navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"${7:#}\">${6:Nav 1} <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${9:#}\">${8:Nav 2}</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\"\n           data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Nav 3 dropdown}</a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n          <a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n          <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n        </div>\n      </li>\n    </ul>\n    <form class=\"form-inline float-xs-right\">\n      <input class=\"form-control\" type=\"text\" placeholder=\"${17:Search}\">\n      <button class=\"btn btn-outline-success\" type=\"submit\">${17:Search}</button>\n    </form>\n  </div>\n</nav>$0",
+    "body" : "<nav class=\"navbar navbar-expand-lg navbar-light bg-light ${1:fixed-top|fixed-bottom|sticky-top}\">\n    <a class=\"navbar-brand\" href=\"${3:#}\">${2:Navbar}</a>\n    <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#${4:collapsibleNavId}\" aria-controls=\"${4:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${5:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${4:collapsibleNavId}\">\n      <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" href=\"${7:#}\">${6:Home} <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"${9:#}\">${8:Link}</a>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Dropdown}</a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n            <a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n            <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n          </div>\n        </li>\n      </ul>\n      <form class=\"form-inline my-2 my-lg-0\">\n        <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n        <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n      </form>\n    </div>\n  </nav>$0",
     "description" : "navbar placement",
+    "scope" : ""
+  },
+  "pagination alignment" : {
+    "prefix" : "b4-pagination-alignment",
+    "body" : "<nav aria-label=\"${1:Page navigation}\">\n  <ul class=\"pagination justify-content-${2:center|end}\">\n    <li class=\"page-item disabled\">\n      <a class=\"page-link\" href=\"${4:#}\" aria-label=\"${3:Previous}\">\n        <span aria-hidden=\"true\">&laquo;</span>\n        <span class=\"sr-only\">${3:Previous}</span>\n      </a>\n    </li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"${6:#}\">$5</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"${8:#}\">$7</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"${10:#}\" aria-label=\"${9:Next}\">\n        <span aria-hidden=\"true\">&raquo;</span>\n        <span class=\"sr-only\">${9:Next}</span>\n      </a>\n    </li>\n  </ul>\n</nav>$0",
+    "description" : "pagination alignment",
     "scope" : ""
   },
   "pagination default" : {
@@ -847,7 +757,7 @@
   },
   "pagination sized" : {
     "prefix" : "b4-pagination-sized",
-    "body" : "<nav aria-label=\"${1:Page navigation}\">\n  <ul class=\"pagination pagination-{2:lg|sm}\">\n    <li class=\"page-item disabled\">\n      <a class=\"page-link\" href=\"${4:#}\" aria-label=\"${3:Previous}\">\n        <span aria-hidden=\"true\">&laquo;</span>\n        <span class=\"sr-only\">${3:Previous}</span>\n      </a>\n    </li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"${6:#}\">$5</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"${8:#}\">$7</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"${10:#}\" aria-label=\"${9:Next}\">\n        <span aria-hidden=\"true\">&raquo;</span>\n        <span class=\"sr-only\">${9:Next}</span>\n      </a>\n    </li>\n  </ul>\n</nav>$0",
+    "body" : "<nav aria-label=\"${1:Page navigation}\">\n  <ul class=\"pagination pagination-${2:lg|sm}\">\n    <li class=\"page-item disabled\">\n      <a class=\"page-link\" href=\"${4:#}\" aria-label=\"${3:Previous}\">\n        <span aria-hidden=\"true\">&laquo;</span>\n        <span class=\"sr-only\">${3:Previous}</span>\n      </a>\n    </li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"${6:#}\">$5</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"${8:#}\">$7</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"${10:#}\" aria-label=\"${9:Next}\">\n        <span aria-hidden=\"true\">&raquo;</span>\n        <span class=\"sr-only\">${9:Next}</span>\n      </a>\n    </li>\n  </ul>\n</nav>$0",
     "description" : "pagination sized",
     "scope" : ""
   },
@@ -865,19 +775,19 @@
   },
   "popover dismissable" : {
     "prefix" : "b4-popover-dismissable",
-    "body" : "<button type=\"button\" class=\"btn btn-secondary\" data-toggle=\"popover\" data-trigger=\"focus\" title=\"${2:Popup title}\" data-content=\"${3:Popup content}\">${1:Trigger}</button>$0",
+    "body" : "<a tabindex=\"0\" class=\"btn btn-secondary\" data-toggle=\"popover\" data-trigger=\"focus\" title=\"${2:Popup title}\" data-content=\"${3:Popup content}\">${1:Trigger}</a>$0",
     "description" : "popover dismissable",
     "scope" : ""
   },
   "progress colored" : {
     "prefix" : "b4-progress-colored",
-    "body" : "<div class=\"text-xs-center\" id=\"${2:progressId}\">${1:Description}</div>\n<progress class=\"progress progress-${5:success|info|warning|danger}\" value=\"$4\" max=\"${3:100}\" aria-describedby=\"${2:progressId}\"></progress>$0",
+    "body" : "<div class=\"progress\">\n    <div class=\"progress-bar bg-${5:primary|secondary|success|danger|warning|info|light|dark}\" role=\"progressbar\" style=\"width: ${4:25}%;\"\n        aria-valuenow=\"${4:25}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">${1:Description}</div>\n</div>$0",
     "description" : "progress colored",
     "scope" : ""
   },
   "progress default" : {
     "prefix" : "b4-progress-default",
-    "body" : "<div class=\"text-xs-center\" id=\"${2:progressId}\">${1:Description}</div>\n<progress class=\"progress\" value=\"$4\" max=\"${3:100}\" aria-describedby=\"${2:progressId}\"></progress>$0",
+    "body" : "<div class=\"progress\">\n    <div class=\"progress-bar\" role=\"progressbar\" style=\"width: ${4:25}%;\" aria-valuenow=\"${4:25}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">${1:Description}</div>\n</div>$0",
     "description" : "progress default",
     "scope" : ""
   },
@@ -889,7 +799,7 @@
   },
   "progress striped" : {
     "prefix" : "b4-progress-striped",
-    "body" : "<div class=\"text-xs-center\" id=\"${2:progressId}\">${1:Description}</div>\n<progress class=\"progress progress-striped progress-${5:success|info|warning|danger}\" value=\"$4\" max=\"${3:100}\" aria-describedby=\"${2:progressId}\"></progress>$0",
+    "body" : "<div class=\"progress\">\n    <div class=\"progress-bar progress-bar-striped ${6:progress-bar-animated} bg-${5:primary|secondary|success|danger|warning|info|light|dark}\" role=\"progressbar\"\n        style=\"width: ${4:25}%;\" aria-valuenow=\"${4:25}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">${1:Description}</div>\n</div>$0",
     "description" : "progress striped",
     "scope" : ""
   },
@@ -913,7 +823,7 @@
   },
   "image default" : {
     "prefix" : "b4-image-default",
-    "body" : "<img src=\"$1\" class=\"${2:img-fluid|img-thumbnail|rounded|rounded-circle|rounded-top|rounded-right|rounded-bottom|rounded-left}\" alt=\"$3\">$0",
+    "body" : "<img src=\"$1\" class=\"img-${2:fluid|thumbnail} ${3:rounded-top|rounded-right|rounded-bottom|rounded-left|rounded-circle|}\" alt=\"$4\">$0",
     "description" : "image default",
     "scope" : ""
   },
@@ -923,21 +833,15 @@
     "description" : "table default",
     "scope" : ""
   },
-  "table responsive" : {
-    "prefix" : "b4-table-responsive",
-    "body" : "<div class=\"table-responsive\">\n  ${1:Insert b4/table/default here}\n</div>$0",
-    "description" : "table responsive",
-    "scope" : ""
-  },
   "table special" : {
     "prefix" : "b4-table-special",
-    "body" : "<table class=\"table table-{1:striped|sm|bordered|hover|inverse} ${2:table-inverse}\">\n\t<thead class=\"${3:thead-inverse|thead-default}\">\n\t\t<tr>\n\t\t\t<th>$4</th>\n\t\t\t<th>$5</th>\n\t\t\t<th>$6</th>\n\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$7</td>\n\t\t\t\t<td>$8</td>\n\t\t\t\t<td>$9</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$10</td>\n\t\t\t\t<td>$11</td>\n\t\t\t\t<td>$12</td>\n\t\t\t</tr>\n\t\t</tbody>\n</table>$0",
+    "body" : "<table class=\"table table-{1:striped|sm|bordered|hover|inverse} ${2:table-inverse} ${3:table-responsive}\">\n\t<thead class=\"${4:thead-inverse|thead-default}\">\n\t\t<tr>\n\t\t\t<th>$5</th>\n\t\t\t<th>$6</th>\n\t\t\t<th>$7</th>\n\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$8</td>\n\t\t\t\t<td>$9</td>\n\t\t\t\t<td>$10</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$11</td>\n\t\t\t\t<td>$12</td>\n\t\t\t\t<td>$13</td>\n\t\t\t</tr>\n\t\t</tbody>\n</table>$0",
     "description" : "table special",
     "scope" : ""
   },
   "typography blockquote reverse" : {
     "prefix" : "b4-typography-blockquote-reverse",
-    "body" : "<blockquote class=\"blockquote blockquote-reverse\">\n\t<p class=\"mb-0\">$1</p>\n\t<footer class=\"blockquote-footer\">$2 <cite title=\"${3:Source Title}\">${3:Source Title}</cite></footer>\n</blockquote>$0",
+    "body" : "<blockquote class=\"blockquote text-right\">\n\t<p class=\"mb-0\">$1</p>\n\t<footer class=\"blockquote-footer\">$2 <cite title=\"${3:Source Title}\">${3:Source Title}</cite></footer>\n</blockquote>$0",
     "description" : "typography blockquote reverse",
     "scope" : ""
   },
@@ -1015,61 +919,61 @@
   },
   "media bottom" : {
     "prefix" : "b4-media-bottom",
-    "body" : "<div class=\"media\">\n\t<div class=\"media-left media-bottom\">\n\t\t<a href=\"${1:#}\">\n\t\t\t<img class=\"media-object\" src=\"$2\" alt=\"$3\">\n\t\t</a>\n\t</div>\n\t<div class=\"media-body\">\n\t\t<h4 class=\"media-heading\">${4:Media heading}</h4>\n\t\t<p>${5:Media text}</p>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"media\">\n\t<a class=\"d-flex align-self-bottom\" href=\"${1:#}\">\n\t  \t<img src=\"$2\" alt=\"$3\">\n\t</a>\n\t<div class=\"media-body\">\n\t\t<h5>${4:Media heading}</h5>\n\t\t<p>${5:Media text}</p>\n\t</div>\n</div>$0",
     "description" : "media bottom",
     "scope" : ""
   },
   "media default" : {
     "prefix" : "b4-media-default",
-    "body" : "<div class=\"media\">\n\t<a class=\"media-left\" href=\"${1:#}\">\n\t\t<img class=\"media-object\" src=\"$2\" alt=\"$3\">\n\t</a>\n\t<div class=\"media-body\">\n\t\t<h4 class=\"media-heading\">${4:Media heading}</h4>\n\t\t${5:Media text}\n\t</div>\n</div>$0",
+    "body" : "<div class=\"media\">\n\t<a class=\"d-flex\" href=\"${1:#}\">\n\t\t<img src=\"$2\" alt=\"$3\">\n\t</a>\n\t<div class=\"media-body\">\n\t\t<h5>${4:Media heading}</h5>\n\t\t${5:Media text}\n\t</div>\n</div>$0",
     "description" : "media default",
     "scope" : ""
   },
   "media list" : {
     "prefix" : "b4-media-list",
-    "body" : "<ul class=\"media-list\">\n\t<li class=\"media\">\n\t\t<div class=\"media-left\">\n\t\t\t<a href=\"${1:#}\">\n\t\t\t\t<img class=\"media-object\" src=\"$2\" alt=\"$3\">\n\t\t\t</a>\n\t\t</div>\n\t\t<div class=\"media-body\">\n\t\t\t<h4 class=\"media-heading\">${4:Media heading}</h4>\n\t\t\t<p>${5:Media text}</p>\n\t\t\t<!-- Nested media object -->\n\t\t\t<div class=\"media mt-2\">\n\t\t\t\t<a class=\"media-left\" href=\"${6:#}\">\n\t\t\t\t\t<img class=\"media-object\" src=\"$7\" alt=\"$8\">\n\t\t\t\t</a>\n\t\t\t\t<div class=\"media-body\">\n\t\t\t\t\t<h4 class=\"media-heading\">${9:Media heading}</h4>\n\t\t\t\t\t${10:Media text}\n\t\t\t\t\t<!-- Nested media object -->\n\t\t\t\t\t<div class=\"media mt-2\">\n\t\t\t\t\t\t<div class=\"media-left\">\n\t\t\t\t\t\t\t<a href=\"${11:#}\">\n\t\t\t\t\t\t\t\t<img class=\"media-object\" src=\"$12\" alt=\"$13\">\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"media-body\">\n\t\t\t\t\t\t\t<h4 class=\"media-heading\">${14:Media heading}</h4>\n\t\t\t\t\t\t\t${15:Media text}\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</li>\n\t<li class=\"media mt-2\">\n\t\t<div class=\"media-body\">\n\t\t\t<h4 class=\"media-heading\">${16:Media heading}</h4>\n\t\t\t${17:Media text}\n\t\t</div>\n\t\t<div class=\"media-left\">\n\t\t\t<a href=\"${18:#}\">\n\t\t\t\t<img class=\"media-object\" src=\"$19\" alt=\"$20\">\n\t\t\t</a>\n\t\t</div>\n\t</li>\n</ul>$0",
+    "body" : "<ul class=\"list-unstyled\">\n\t<li class=\"media\">\n\t\t<a class=\"d-flex\" href=\"${1:#}\">\n\t\t\t<img src=\"$2\" alt=\"$3\">\n\t\t</a>\n\t\t<div class=\"media-body\">\n\t\t\t<h5>${4:Media heading}</h5>\n\t\t\t${5:Media text}\n\t\t</div>\n\t</li>\n\t<li class=\"media\">\n\t\t<a class=\"d-flex\" href=\"${6:#}\">\n\t\t\t<img src=\"$7\" alt=\"$8\">\n\t\t</a>\n\t\t<div class=\"media-body\">\n\t\t\t<h5>${9:Media heading}</h5>\n\t\t\t${10:Media text}\n\t\t</div>\n\t</li>\n\t<li class=\"media\">\n\t\t<a class=\"d-flex\" href=\"${11:#}\">\n\t\t\t<img src=\"$12\" alt=\"$13\">\n\t\t</a>\n\t\t<div class=\"media-body\">\n\t\t\t<h5>${14:Media heading}</h5>\n\t\t\t${15:Media text}\n\t\t</div>\n\t</li>\n  </ul>$0",
     "description" : "media list",
     "scope" : ""
   },
   "media middle" : {
     "prefix" : "b4-media-middle",
-    "body" : "<div class=\"media\">\n\t<div class=\"media-left media-middle\">\n\t\t<a href=\"${1:#}\">\n\t\t\t<img class=\"media-object\" src=\"$2\" alt=\"$3\">\n\t\t</a>\n\t</div>\n\t<div class=\"media-body\">\n\t\t<h4 class=\"media-heading\">${4:Media heading}</h4>\n\t\t<p>${5:Media text}</p>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"media\">\n\t<a class=\"d-flex align-self-center\" href=\"${1:#}\">\n\t  \t<img src=\"$2\" alt=\"$3\">\n\t</a>\n\t<div class=\"media-body\">\n\t\t<h5>${4:Media heading}</h5>\n\t\t<p>${5:Media text}</p>\n\t</div>\n</div>$0",
     "description" : "media middle",
     "scope" : ""
   },
   "media nesting" : {
     "prefix" : "b4-media-nesting",
-    "body" : "<div class=\"media\">\n  <div class=\"media-left\">\n    <a href=\"${1:#}\">\n      <img class=\"media-object\" src=\"$2\" alt=\"$3\">\n    </a>\n  </div>\n  <div class=\"media-body\">\n    <h4 class=\"media-heading\">${4:Media heading}</h4>\n    ${5:Media text}\n    <div class=\"media mt-2\">\n      <a class=\"media-left\" href=\"${6:#}\">\n        <img class=\"media-object\" src=\"$7\" alt=\"$8\">\n      </a>\n      <div class=\"media-body\">\n        <h4 class=\"media-heading\">${9:Media heading}</h4>\n        ${10:Media text}\n      </div>\n    </div>\n  </div>\n</div>$0",
+    "body" : "<div class=\"media\">\n    <a class=\"d-flex\" href=\"${1:#}\">\n        <img src=\"$2\" alt=\"$3\">\n  </a>\n    <div class=\"media-body\">\n        <h5>${4:Media heading}</h5>\n        ${5:Media text}\n        <div class=\"media\">\n            <a class=\"d-flex\" href=\"${6:#}\">\n        <img src=\"$7\" alt=\"$8\">\n      </a>\n            <div class=\"media-body\">\n                <h5>${9:Media heading}</h5>\n                ${10:Media text}\n            </div>\n        </div>\n    </div>\n</div>$0",
     "description" : "media nesting",
     "scope" : ""
   },
   "media right" : {
     "prefix" : "b4-media-right",
-    "body" : "<div class=\"media\">\n\t<div class=\"media-body\">\n\t\t<h4 class=\"media-heading\">${1:Media heading}</h4>\n\t\t${2:Media text}\n\t</div>\n\t<div class=\"media-right\">\n\t\t<a href=\"${3:#}\">\n\t\t\t<img class=\"media-object\" src=\"$4\" alt=\"$5\">\n\t\t</a>\n\t</div>\n</div>$0",
+    "body" : "<div class=\"media\">\n\t<div class=\"media-body\">\n\t\t<h5>${1:Media heading}</h5>\n\t\t${2:Media text}\n\t</div>\n\t<a class=\"d-flex\" href=\"${3:#}\">\n\t\t<img  src=\"$4\" alt=\"$5\">\n\t</a>\n</div>$0",
     "description" : "media right",
     "scope" : ""
   },
   "media top" : {
     "prefix" : "b4-media-top",
-    "body" : "<div class=\"media\">\n  <div class=\"media-left\">\n    <a href=\"${1:#}\">\n      <img class=\"media-object\" src=\"$2\" alt=\"$3\">\n    </a>\n  </div>\n  <div class=\"media-body\">\n    <h4 class=\"media-heading\">${4:Media heading}</h4>\n    <p>${5:Media text}</p>\n  </div>\n</div>$0",
+    "body" : "<div class=\"media\">\n    <a class=\"d-flex align-self-start\" href=\"${1:#}\">\n      <img src=\"$2\" alt=\"$3\">\n  </a>\n    <div class=\"media-body\">\n        <h5>${4:Media heading}</h5>\n        <p>${5:Media text}</p>\n    </div>\n</div>$0",
     "description" : "media top",
     "scope" : ""
   },
-  "responsive print hide custom" : {
-    "prefix" : "b4-responsive-print-hide-custom",
-    "body" : "<div class=\"col-${1:xs|sm|md|lg}-${2:1-12} hidden-${3:xs|sm|md|lg|xl}-${4:down|up}\">\n\t$5\n</div>$0",
-    "description" : "responsive print hide custom",
+  "responsive hide down" : {
+    "prefix" : "b4-responsive-hide-down",
+    "body" : "<div class=\"d-none d-${1:sm|md|lg|xl}-block\">\n\t$2\n</div>$0",
+    "description" : "responsive hide down",
     "scope" : ""
   },
-  "responsive print hide" : {
-    "prefix" : "b4-responsive-print-hide",
-    "body" : "<div class=\"hidden-print\">\n  \t$1\n</div>$0",
-    "description" : "responsive print hide",
+  "responsive hide up" : {
+    "prefix" : "b4-responsive-hide-up",
+    "body" : "<div class=\"d-${1:sm|md|lg|xl}-none\">\n\t$2\n</div>$0",
+    "description" : "responsive hide up",
     "scope" : ""
   },
   "responsive print show" : {
     "prefix" : "b4-responsive-print-show",
-    "body" : "<div class=\"visible-print-${1:block|inline|inline-block}\">\n  \t$2\n</div>$0",
+    "body" : "<div class=\"d-print-${1:block|inline|inline-block|none}\">\n  \t$2\n</div>$0",
     "description" : "responsive print show",
     "scope" : ""
   },
