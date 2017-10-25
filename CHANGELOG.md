@@ -1,3 +1,7 @@
+## Since 3.0.0 (25 Oct 2017):
+
+  - Migrated to beta-2
+
 ## Since 2.4.0 (18 Jul 2017):
 
   - Added support for vue
