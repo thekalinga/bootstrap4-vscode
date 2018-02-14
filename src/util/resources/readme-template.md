@@ -1,7 +1,7 @@
 Bootstrap 4 & Font awesome snippets for Visual studio code
 ===========================
 
-Visual studio code plugin containing Bootstrap 4 & Font awesome snippets. This plugin works in both in the stable & the insiders build
+Visual studio code plugin containing Bootstrap 4, Font awesome 4 & Font Awesome 5 Free & Pro snippets. This plugin works in both in the stable & the insiders build
 
 ![Plugin in action](help.gif)
 
@@ -22,7 +22,11 @@ You are good to go
 
 To use the bootstrap snippets, open a HTML file, and start typing `b4-`, followed by pressing `Ctrl+Space`. A list of bootstrap snippets will show up
 
-To use font awesome snippets, open a HTML file, and start typing `fa-`, the editor will show you all the snippets
+To use font awesome 4 snippets, open a HTML file, and start typing `fa4-`, the editor will show you all the snippets
+
+To use font awesome 5 free snippets, open a HTML file, and start typing `fa5-`, the editor will show you all the snippets
+
+To use font awesome 5 pro snippets, open a HTML file, and start typing `fa5p-`, the editor will show you all the snippets
 
 The detailed list of supported actions are listed below under documentation section
 
@@ -43,7 +47,7 @@ See [here](CHANGELOG.md)
 
 ## License
 
-Bootstrap 4 & Font awesome - Visual studio code plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Bootstrap 4, Font Awesome 4, Font Awesome 5 Free & Pro - Visual studio code plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 
 ## Disclaimer:

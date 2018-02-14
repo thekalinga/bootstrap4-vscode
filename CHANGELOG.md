@@ -1,3 +1,7 @@
+## Since 4.0.0 (14 Feb 2018):
+
+  - Added support for Font Awesome 5 Free & Pro snippets
+
 ## Since 3.1.0 (24 Jan 2018):
 
   - Migrated to stable bootstrap v4
