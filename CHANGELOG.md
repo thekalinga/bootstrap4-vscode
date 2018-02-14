@@ -1,6 +1,6 @@
 ## Since 3.1.0 (24 Jan 2018):
 
-  - Migrated to stabile bootstrap v4
+  - Migrated to stable bootstrap v4
 
 ## Since 3.0.0 (25 Oct 2017):
 
