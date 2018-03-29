@@ -1,3 +1,7 @@
+## Since 4.1.0 (29 Mar 2018):
+
+  - Fixed issue with navbar on mobile screens
+
 ## Since 4.0.0 (14 Feb 2018):
 
   - Added support for Font Awesome 5 Free & Pro snippets
