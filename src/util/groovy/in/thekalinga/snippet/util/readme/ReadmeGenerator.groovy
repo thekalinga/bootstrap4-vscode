@@ -83,9 +83,9 @@ class ReadmeGenerator {
             })
         })
 
-        // Handle font awesome
+        // Handle font awesome 4
         builder << "\n"
-        builder << "### Font awesome 5\n\n"
+        builder << "### Font awesome 4\n\n"
         builder << "|Trigger|\n"
         builder << "|---|\n"
         ObjectMapper mapper = new ObjectMapper()
@@ -105,7 +105,7 @@ class ReadmeGenerator {
             builder << "|${iconStr}|\n"
         })
 
-        // Handle font awesome 5 Free
+        // Handle font awesome 5 Pro
         builder << "\n"
         builder << "### Font awesome 5 Pro\n\n"
         builder << "|Trigger|\n"

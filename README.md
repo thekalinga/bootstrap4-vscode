@@ -352,7 +352,7 @@ responsive-hide-down | Responsive hide down
 responsive-hide-up | Responsive hide up
 responsive-print-show | Responsive print show
 
-### Font awesome 5
+### Font awesome 4
 
 |Trigger|
 |---|

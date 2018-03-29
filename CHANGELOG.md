@@ -1,3 +1,7 @@
+## Since 4.1.1 (29 Mar 2018):
+
+  - Fixed documentation issue
+
 ## Since 4.1.0 (29 Mar 2018):
 
   - Fixed issue with navbar on mobile screens
