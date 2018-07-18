@@ -48,8 +48,8 @@ class SnippetGenerator {
         })
 
         // Font awesome 5 Free
-        putSnippet(descriptionToSnippet, 'fa5-\$-js', '<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>$0', 'Font Awesome 5 Free JS link')
-        putSnippet(descriptionToSnippet, 'fa5-\$-css', '<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">$0', 'Font Awesome 5 Free CSS link')
+        putSnippet(descriptionToSnippet, 'fa5-\$-js', '<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>$0', 'Font Awesome 5 Free JS link')
+        putSnippet(descriptionToSnippet, 'fa5-\$-css', '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">$0', 'Font Awesome 5 Free CSS link')
 
         iconsContainer = mapper.readValue(getClass().getResourceAsStream('/font-awesome5.json'), Icons.class)
         iconsContainer.icons.forEach({ iconStr ->
