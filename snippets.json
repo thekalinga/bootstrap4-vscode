@@ -13,7 +13,7 @@
   },
   "alert closable" : {
     "prefix" : "b4-alert-closable",
-    "body" : "<div class=\"alert alert-warning alert-dismissible fade in\" role=\"alert\">\n  <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n  <strong>$1</strong> $2\n</div>\n\n<script>\n  $(\".alert\").alert();\n</script>$0",
+    "body" : "<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\n  <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n  <strong>$1</strong> $2\n</div>\n\n<script>\n  $(\".alert\").alert();\n</script>$0",
     "description" : "alert closable",
     "scope" : ""
   },
@@ -25,7 +25,7 @@
   },
   "alert dismissible" : {
     "prefix" : "b4-alert-dismissible",
-    "body" : "<div class=\"alert alert-${2:primary|secondary|success|info|warning|danger|light|dark} alert-dismissible fade in\" role=\"alert\">\n\t<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n\t\t<span aria-hidden=\"true\">&times;</span>\n\t\t<span class=\"sr-only\">Close</span>\n\t</button>\n\t${1:<strong>Holy guacamole!</strong> You should check in on some of those fields below.}\n</div>$0",
+    "body" : "<div class=\"alert alert-${2:primary|secondary|success|info|warning|danger|light|dark} alert-dismissible fade show\" role=\"alert\">\n\t<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n\t\t<span aria-hidden=\"true\">&times;</span>\n\t\t<span class=\"sr-only\">Close</span>\n\t</button>\n\t${1:<strong>Holy guacamole!</strong> You should check in on some of those fields below.}\n</div>$0",
     "description" : "alert dismissible",
     "scope" : ""
   },
@@ -673,7 +673,7 @@
   },
   "nav complete" : {
     "prefix" : "b4-nav-complete",
-    "body" : "<!-- Nav tabs -->\n<ul class=\"nav nav-${2:tabs|pills}\" id=\"${1:navId}\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"#${4:tab1Id}\" class=\"nav-link active\">${3:Active}</a>\n\t</li>\n\t<li class=\"nav-item dropdown\">\n\t\t<a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">${5:Dropdown}</a>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"#${7:tab2Id}\">${6:Action}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"#${9:tab3Id}\">${8:Another action}</a>\n\t\t\t<div class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"#${11:tab4Id}\">${10:Action}</a>\n\t\t</div>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"#${13:tab5Id}\" class=\"nav-link\">${12:Another link}</a>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"#\" class=\"nav-link disabled\">${14:Disabled}</a>\n\t</li>\n</ul>\n\n<!-- Tab panes -->\n<div class=\"tab-content\">\n\t<div class=\"tab-pane fade in active\" id=\"${4:tab1Id}\" role=\"tabpanel\">$15</div>\n\t<div class=\"tab-pane fade\" id=\"${7:tab2Id}\" role=\"tabpanel\">$16</div>\n\t<div class=\"tab-pane fade\" id=\"${9:tab3Id}\" role=\"tabpanel\">$17</div>\n\t<div class=\"tab-pane fade\" id=\"${11:tab4Id}\" role=\"tabpanel\">$18</div>\n\t<div class=\"tab-pane fade\" id=\"${13:tab5Id}\" role=\"tabpanel\">$19</div>\n</div>\n\n<script>\n\t$('#${1:navId} a').click(e => {\n\t\te.preventDefault();\n\t\t$(this).tab('show');\n\t});\n</script>$0",
+    "body" : "<!-- Nav tabs -->\n<ul class=\"nav nav-${2:tabs|pills}\" id=\"${1:navId}\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"#${4:tab1Id}\" class=\"nav-link active\">${3:Active}</a>\n\t</li>\n\t<li class=\"nav-item dropdown\">\n\t\t<a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">${5:Dropdown}</a>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"#${7:tab2Id}\">${6:Action}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"#${9:tab3Id}\">${8:Another action}</a>\n\t\t\t<div class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"#${11:tab4Id}\">${10:Action}</a>\n\t\t</div>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"#${13:tab5Id}\" class=\"nav-link\">${12:Another link}</a>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"#\" class=\"nav-link disabled\">${14:Disabled}</a>\n\t</li>\n</ul>\n\n<!-- Tab panes -->\n<div class=\"tab-content\">\n\t<div class=\"tab-pane fade show active\" id=\"${4:tab1Id}\" role=\"tabpanel\">$15</div>\n\t<div class=\"tab-pane fade\" id=\"${7:tab2Id}\" role=\"tabpanel\">$16</div>\n\t<div class=\"tab-pane fade\" id=\"${9:tab3Id}\" role=\"tabpanel\">$17</div>\n\t<div class=\"tab-pane fade\" id=\"${11:tab4Id}\" role=\"tabpanel\">$18</div>\n\t<div class=\"tab-pane fade\" id=\"${13:tab5Id}\" role=\"tabpanel\">$19</div>\n</div>\n\n<script>\n\t$('#${1:navId} a').click(e => {\n\t\te.preventDefault();\n\t\t$(this).tab('show');\n\t});\n</script>$0",
     "description" : "nav complete",
     "scope" : ""
   },

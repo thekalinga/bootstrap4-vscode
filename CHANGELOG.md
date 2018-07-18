@@ -1,3 +1,7 @@
+## Since 4.2.2 (18 Jul 2018):
+
+  - Fixed issue with auto closable. Replaced classes `fade in` with `fade show`
+
 ## Since 4.2.1 (18 Jul 2018):
 
   - Fixed issue with CDN link update
