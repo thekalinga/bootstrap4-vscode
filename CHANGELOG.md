@@ -1,3 +1,7 @@
+## Since 4.3.0 (18 Jul 2018):
+
+  - Added support for JS & JSX files
+
 ## Since 4.2.2 (18 Jul 2018):
 
   - Fixed issue with auto closable. Replaced classes `fade in` with `fade show`

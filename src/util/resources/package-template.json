@@ -68,6 +68,14 @@
         "path": "./snippets.json"
       },
       {
+        "language": "javascriptreact",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets.json"
+      },
+      {
         "language": "twig",
         "path": "./snippets.json"
       },
