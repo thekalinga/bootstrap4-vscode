@@ -1,3 +1,7 @@
+## Since 4.2.0 (18 Jul 2018):
+
+  - CDN links are updated
+
 ## Since 4.1.1 (29 Mar 2018):
 
   - Fixed documentation issue

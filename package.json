@@ -3,7 +3,7 @@
   "displayName": "Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets",
   "description": "Bootstrap 4 snippets based on documentation + Font awesome 4 + Font Awesome 5 Free & Pro snippets",
   "icon": "bootstrap_128px.png",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "publisher": "thekalinga",
   "license": "See License section in README.md",
   "homepage": "https://github.com/thekalinga/bootstrap4-vscode/blob/master/README.md",
