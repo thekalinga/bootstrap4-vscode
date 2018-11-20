@@ -1,3 +1,11 @@
+## Since 5.0.0 (20 Nov 2018):
+
+  - Updated Bootstrap version to 4.1.3
+  - Added support for vue, django, erb, HTML (Eex)
+  - Fixed issue with navbar templates. Thanks to @whitebloodcell
+  - Fixed issue with navbar templates. Thanks to @agonxgashi
+  - Minor bug fixes
+
 ## Since 4.3.0 (18 Jul 2018):
 
   - Added support for JS & JSX files
