@@ -1,8 +1,0 @@
-- Bump version in `.version` file
-- `./gradlew regenerate` will regenerate `snippets.json`, `README.md` & `package.json`
-- Update `CHANGELOG.md` with release notes
-- `git add .` will stage all local changes for commit
-- `git commit -m <Changes>` will commit to local git repo
-- `git tag -a <version> -m "<Release notes>"` will create tag with the latest version
-- `git push && git push origin <version>` will push both the code & the tags to github 
-- `vsce publish` will publish plugin to visual studio marketplace
